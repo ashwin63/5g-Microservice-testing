@@ -19,10 +19,10 @@ def get_next_val(filename):
         result = subprocess.run(command, shell=True, capture_output=True, text=True)
         mutated_output = result.stdout.strip()
         # Filter the output to ensure it's a positive number
-        with open('/RESTler/json/output.txt', 'a') as file:
-            file.write(mutated_output)
-            file.write('\n')
         if re.match(r'^[0-9]+$', mutated_output):
+            with open('/RESTler/json/output.txt', 'a') as file:
+                file.write(mutated_output)
+                file.write('\n')
             return mutated_output
 def get_next_val_char(filename):
     command = 'echo "a" | radamsa --mutations num'
