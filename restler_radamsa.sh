@@ -1,5 +1,9 @@
 #!/bin/bash
-
+#install radamsa
+git clone https://gitlab.com/akihe/radamsa.git
+cd /RESTler/json/radamsa
+make
+make install
 # Execute the restler/Restler test command
 echo "Restler Compile started" >> /RESTler/json/restler_log
 /RESTler/restler/Restler compile --api_spec /RESTler/json/swagger.json 
