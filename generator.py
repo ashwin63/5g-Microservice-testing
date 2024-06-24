@@ -16,7 +16,7 @@ def get_next_val(filename):
     while True:
         command = 'echo "12345" | radamsa --mutations num'  # Using a simple base number for mutations
         result = subprocess.run(command, shell=True, capture_output=True, text=True)
-        mutated_output = result
+        mutated_output = result.stdout.strip()
         # Filter the output to ensure it's a positive number
         with open('/RESTler/json/output.txt', 'a') as file:
             file.write(mutated_output)
