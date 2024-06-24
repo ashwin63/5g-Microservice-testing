@@ -1,10 +1,6 @@
 #!/bin/bash
 
-#install radamsa
-git clone https://gitlab.com/akihe/radamsa.git
-cd /RESTler/json/radamsa
-make
-make install
+
 # Execute the restler/Restler test command
 echo "Restler Compile started" >> /RESTler/restler/restler_log
 /RESTler/restler/Restler compile --api_spec /RESTler/restler/config.json 
