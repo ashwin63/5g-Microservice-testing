@@ -14,15 +14,15 @@ def get_next_val(filename):
     #return subprocess.run('echo "ashwin"',capture_output= True)
     #return subprocess.run(['"ashwin" |radamsa'], capture_output=True)
     while True:
-    	command = 'echo "12345" | radamsa'  # Using a simple base number for mutations
-    	result = subprocess.run(command, shell=True, capture_output=True, text=True)
-    	mutated_output = result
-		# Filter the output to ensure it's a positive number
-		with open('/RESTler/json/output.txt', 'a') as file:
-			file.write(mutated_output)
-			file.write('\n')
-		if re.match(r'^[0-9]+$', mutated_output):
-			return mutated_output
+        command = 'echo "12345" | radamsa'  # Using a simple base number for mutations
+        result = subprocess.run(command, shell=True, capture_output=True, text=True)
+        mutated_output = result
+        # Filter the output to ensure it's a positive number
+        with open('/RESTler/json/output.txt', 'a') as file:
+            file.write(mutated_output)
+            file.write('\n')
+        if re.match(r'^[0-9]+$', mutated_output):
+            return mutated_output
 def get_next_val_char(filename):
     command = 'echo "a" | radamsa --mutations num'
     result = subprocess.run(command, shell=True, capture_output=True, text=True) 
@@ -39,7 +39,6 @@ def gen_restler_fuzzable_int(**kwargs):
 
 
 value_generators = {
-	"restler_fuzzable_int": gen_restler_fuzzable_int
+    "restler_fuzzable_int": gen_restler_fuzzable_int
 }
 #print(get_next_val("sample_file_name_not_used"))
-
