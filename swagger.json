@@ -14,7 +14,7 @@
       "url": "https://10.100.200.3:8000",
       "variables": {
         "apiRoot": {
-          "default": "https://127.0.0.18:8000",
+          "default": "https://127.0.0.18:8100",
           "description": "apiRoot as defined in subclause subclause 4.4 of 3GPP TS 29.501"
         }
       }
