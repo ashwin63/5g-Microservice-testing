@@ -16,10 +16,10 @@ def get_next_val(filename):
     command = 'echo "1" | radamsa --mutations num' # using number mutations generator as of now for int values
     result = subprocess.run(command, shell=True, capture_output=True, text=True) # can also use a file filled  with sample data as input
     # Create files with sample data filled for different data types and use that
-    '''with open('output.txt', 'a') as file:
+    with open('/RESTler/json/output.txt', 'a') as file:
     	file.write(result.stdout)
     	file.write('\n') 
-    return result.stdout'''
+    return result.stdout
 def get_next_val_char(filename):
     command = 'echo "a" | radamsa --mutations num'
     result = subprocess.run(command, shell=True, capture_output=True, text=True) 
