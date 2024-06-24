@@ -24,7 +24,4 @@ if [ $? -eq 0 ]; then
 else
     # If the test command failed, enter an infinite loop
     echo "Restler Test failed" >> /RESTler/json/restler_log
-    while true; do
-        sleep 1
-    done
 fi
