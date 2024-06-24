@@ -11,7 +11,7 @@
   },
   "servers": [
     {
-      "url": "https://10.100.200.3:80",
+      "url": "https://10.100.200.4:8100",
       "variables": {
         "apiRoot": {
           "default": "https://127.0.0.18:8100",
