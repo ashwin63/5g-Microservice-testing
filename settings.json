@@ -1,4 +1,4 @@
 {
-        "custom_value_generators": "/media/ashwin/F/research/5gc/generator.py",
+        "custom_value_generators": "/RESTler/json/generator.py",
         "disable_logging":"True" 
 }
