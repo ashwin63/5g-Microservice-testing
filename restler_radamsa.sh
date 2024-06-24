@@ -1,5 +1,9 @@
 #!/bin/bash
 #install radamsa
+apk add make
+apk add gcc
+apk add wget
+apk add clang
 git clone https://gitlab.com/akihe/radamsa.git
 cd /RESTler/json/radamsa
 make
