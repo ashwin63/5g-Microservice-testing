@@ -13,16 +13,15 @@ EXAMPLE_ARG = "examples"
 def get_next_val(filename):
     #return subprocess.run('echo "ashwin"',capture_output= True)
     #return subprocess.run(['"ashwin" |radamsa'], capture_output=True)
-    while True:
-        command = 'echo "12345" | radamsa'  # Using a simple base number for mutations
-        result = subprocess.run(command, shell=True, capture_output=True, text=True)
-        mutated_output = result.stdout.strip()
-
-        # Filter the output to ensure it's a positive number
-        if re.match(r'^[0-9]+$', mutated_output):
-            with open('/RESTler/json/output.txt', 'a') as file:
-                file.write(mutated_output)
-                file.write('\n')
+	while True:
+		command = 'echo "12345" | radamsa'  # Using a simple base number for mutations
+		result = subprocess.run(command, shell=True, capture_output=True, text=True)
+		mutated_output = result.stdout.strip()
+		# Filter the output to ensure it's a positive number
+		if re.match(r'^[0-9]+$', mutated_output):
+			with open('/RESTler/json/output.txt', 'a') as file:
+			file.write(mutated_output)
+			file.write('\n')
             return mutated_output
 def get_next_val_char(filename):
     command = 'echo "a" | radamsa --mutations num'
