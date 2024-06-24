@@ -13,7 +13,7 @@ EXAMPLE_ARG = "examples"
 def get_next_val(filename):
     #return subprocess.run('echo "ashwin"',capture_output= True)
     #return subprocess.run(['"ashwin" |radamsa'], capture_output=True)
-    command = 'echo "1" | radamsa --mutations num' # using number mutations generator as of now for int values
+    command = 'echo "1.23" | radamsa --mutations num' # using number mutations generator as of now for int values
     result = subprocess.run(command, shell=True, capture_output=True, text=True) # can also use a file filled  with sample data as input
     # Create files with sample data filled for different data types and use that
     with open('/RESTler/json/output.txt', 'a') as file:
@@ -36,6 +36,6 @@ def gen_restler_fuzzable_int(**kwargs):
 
 
 value_generators = {
-	#"restler_fuzzable_int": gen_restler_fuzzable_int
+	"restler_fuzzable_number": gen_restler_fuzzable_int
 }
 #print(get_next_val("sample_file_name_not_used"))
