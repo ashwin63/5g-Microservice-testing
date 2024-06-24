@@ -3,7 +3,7 @@
 # Execute the restler/Restler test command
 echo "Restler Compile started" >> /RESTler/restler_log
 /RESTler/restler/Restler compile --api_spec /RESTler/json/swagger.json 
-/RESTler/restler/Restler test --grammar_file /RESTler/Compile/grammar.py --dictionary_file /RESTler/Compile/dict.json --no_ssl >> restler_log
+/RESTler/restler/Restler test --grammar_file /RESTler/Compile/grammar.py --dictionary_file /RESTler/Compile/dict.json --no_ssl
 
 #echo "Restler Test Passed" >> /RESTler/restler_log
 # Check if the command was successful
