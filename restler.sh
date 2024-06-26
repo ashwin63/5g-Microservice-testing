@@ -2,16 +2,19 @@
 # Define the default filename
 # first argument filename 
 # -r => uses radamsa
-filename = "swagger.json"
+filename="swagger.json"
+radamsa=false
+
 # Check for command line arguments and assign to filename if present
 if [ $# -gt 0 ]; then
-    filename = "$1"
-    echo $filename
+    filename="$1"
+    echo "Filename: $filename"
 fi
-radamsa = false
-if [$2 == 'r']; then
-    radamsa = true
-    echo $radamsa
+
+# Check for -r flag
+if [ "$2" == '-r' ]; then
+    radamsa=true
+    echo "Radamsa: $radamsa"
 fi
 #install radamsa
 apk add make
