@@ -10,7 +10,7 @@ if [ $# -gt 0 ]; then
 fi
 radamsa = false
 if [ $# -gt 1 && ]; then
-    if [$2 == '-r']; then
+    if [$2 == 'r']; then
         radamsa = true
         echo $radamsa
     fi
