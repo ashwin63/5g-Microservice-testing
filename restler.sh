@@ -17,14 +17,17 @@ if [ "$2" == '-r' ]; then
     echo "Radamsa: $radamsa"
 fi
 #install radamsa
-apk add make
-apk add gcc
-apk add wget
-apk add clang
-git clone https://gitlab.com/akihe/radamsa.git
-cd /RESTler/json/radamsa
-make
-make install
+if $radamsa
+then
+    apk add make
+    apk add gcc
+    apk add wget
+    apk add clang
+    git clone https://gitlab.com/akihe/radamsa.git
+    cd /RESTler/json/radamsa
+    make
+    make install
+fi
 cd /RESTler/json
 # Execute the restler/Restler test command
 echo "Restler Compile started" >> /RESTler/json/restler_log
