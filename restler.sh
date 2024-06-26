@@ -6,13 +6,13 @@ filename="swagger.json"
 # Check for command line arguments and assign to filename if present
 if [ $# -gt 0 ]; then
     filename="$1"
-    echo filename
+    echo $filename
 fi
 radamsa = false
 if [ $# -gt 1 && ]; then
     if [$2 == '-r']; then
         radamsa = true
-        echo radamsa
+        echo $radamsa
     fi
 fi
 #install radamsa
