@@ -41,6 +41,7 @@ if [ $? -eq 0 ]; then
         /RESTler/restler/Restler fuzz --grammar_file /RESTler/json/Compile/grammar.py --dictionary_file /RESTler/json/Compile/dict.json --settings /RESTler/json/settings.json --no_ssl
     else
         /RESTler/restler/Restler fuzz --grammar_file /RESTler/json/Compile/grammar.py --dictionary_file /RESTler/json/Compile/dict.json --no_ssl
+    fi
     echo "Restler Fuzz Finished" >> /RESTler/json/restler_log
 else
     # If the test command failed, enter an infinite loop
