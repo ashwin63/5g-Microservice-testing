@@ -43,8 +43,10 @@ if [ $? -eq 0 ]; then
     echo "Restler Fuzz started" >> /RESTler/json/restler_log
     if $radamsa 
     then
+        echo "using radamsa"
         /RESTler/restler/Restler fuzz --grammar_file /RESTler/json/Compile/grammar.py --dictionary_file /RESTler/json/Compile/dict.json --settings /RESTler/json/settings.json --no_ssl
     else
+        echo " Starting fuzzing with default dictionary"
         /RESTler/restler/Restler fuzz --grammar_file /RESTler/json/Compile/grammar.py --dictionary_file /RESTler/json/Compile/dict.json --no_ssl
     fi
     echo "Restler Fuzz Finished" >> /RESTler/json/restler_log
