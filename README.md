@@ -1,4 +1,4 @@
-restler.sh ->  
+restler.sh 
 Arguments -> 
 1st argument =>API specification file name
 2nd argument => -r flag -> this uses radamsa to test and fuzzz
