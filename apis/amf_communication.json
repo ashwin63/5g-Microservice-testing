@@ -19,7 +19,7 @@
   },
   "servers": [
     {
-      "url": "{apiRoot}/namf-comm/v1",
+      "url": "https://amf:8000/namf-comm/v1",
       "variables": {
         "apiRoot": {
           "default": "https://example.com",
