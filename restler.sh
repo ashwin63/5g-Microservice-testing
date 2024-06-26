@@ -29,7 +29,7 @@ cd /RESTler/json
 # Execute the restler/Restler test command
 echo "Restler Compile started" >> /RESTler/json/restler_log
 /RESTler/restler/Restler compile --api_spec /RESTler/json/"$filename" 
-if ["$radamsa" == true ]; then 
+if $radamsa then 
     /RESTler/restler/Restler test --grammar_file /RESTler/json/Compile/grammar.py --dictionary_file /RESTler/json/Compile/dict.json --settings /RESTler/json/settings.json --no_ssl
 else
     /RESTler/restler/Restler test --grammar_file /RESTler/json/Compile/grammar.py --dictionary_file /RESTler/json/Compile/dict.json --no_ssl
