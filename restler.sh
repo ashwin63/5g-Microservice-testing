@@ -9,10 +9,7 @@ if [ $# -gt 0 ]; then
     echo $filename
 fi
 radamsa = false
-if [$2 == 'r']; then
-    radamsa = true
-    echo $radamsa
-fi
+
 #install radamsa
 apk add make
 apk add gcc
