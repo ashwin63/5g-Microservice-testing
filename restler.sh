@@ -2,15 +2,15 @@
 # Define the default filename
 # first argument filename 
 # -r => uses radamsa
-filename="swagger.json"
+filename = "swagger.json"
 # Check for command line arguments and assign to filename if present
 if [ $# -gt 0 ]; then
-    $filename = "$1"
+    filename = "$1"
     echo $filename
 fi
 radamsa = false
 if [$2 == 'r']; then
-    $radamsa = true
+    radamsa = true
     echo $radamsa
 fi
 #install radamsa
@@ -26,7 +26,7 @@ cd /RESTler/json
 # Execute the restler/Restler test command
 echo "Restler Compile started" >> /RESTler/json/restler_log
 /RESTler/restler/Restler compile --api_spec /RESTler/json/"$filename" 
-if [ $radamsa == true]; then 
+if [ radamsa == true]; then 
     /RESTler/restler/Restler test --grammar_file /RESTler/json/Compile/grammar.py --dictionary_file /RESTler/json/Compile/dict.json --settings /RESTler/json/settings.json --no_ssl
 else
     /RESTler/restler/Restler test --grammar_file /RESTler/json/Compile/grammar.py --dictionary_file /RESTler/json/Compile/dict.json --no_ssl
@@ -37,7 +37,7 @@ fi
 if [ $? -eq 0 ]; then
     # If successful, execute the restler/Restler fuzz command
     echo "Restler Fuzz started" >> /RESTler/json/restler_log
-    if [ $radamsa == true]; then
+    if [ radamsa == true]; then
         /RESTler/restler/Restler fuzz --grammar_file /RESTler/json/Compile/grammar.py --dictionary_file /RESTler/json/Compile/dict.json --settings /RESTler/json/settings.json --no_ssl
     else
         /RESTler/restler/Restler fuzz --grammar_file /RESTler/json/Compile/grammar.py --dictionary_file /RESTler/json/Compile/dict.json --no_ssl
