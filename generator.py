@@ -28,10 +28,34 @@ def get_next_val(filename):
                     return val
             except ValueError:
                 pass  # Handle conversion to int errors
-def get_next_val_char(filename):
-    command = 'echo "a" | radamsa --mutations num'
-    result = subprocess.run(command, shell=True, capture_output=True, text=True) 
-    return result.stdout
+def get_next_string(filename: str) -> str:
+    """
+    Generate a mutated string using Radamsa.
+    
+    Args:
+    - filename (str): The name of the file to write the value to.
+    
+    Returns:
+    - str: The generated string.
+    """
+    command = 'echo "example_string" | radamsa'
+    result = subprocess.run(command, shell=True, capture_output=True, text=True)
+    return result.stdout.strip()
+
+def get_next_unquoted_string(filename: str) -> str:
+    """
+    Generate a mutated string using Radamsa and ensure it is unquoted.
+    
+    Args:
+    - filename (str): The name of the file to write the value to.
+    
+    Returns:
+    - str: The generated unquoted string.
+    """
+    while True:
+        string_val = get_next_string(filename)
+        unquoted_string = string_val.strip('"')
+        return unquoted_string
 def get_next_number(filename):
     while True:
         command = 'echo "12345" | radamsa --mutations num'  # Using a simple base number for mutations
@@ -40,15 +64,17 @@ def get_next_number(filename):
         # Filter the output to ensure it's a positive number
         if re.match(r'^\-?\d+$', mutated_output):  # Match integers (possibly negative)
             return mutated_output
-def placeholder_value_generator():
-    while True:
-        #raise Exception("Testing")
-        yield get_next_val("sample_file_name")
-        #yield int(random.randint(222,225 ))
-        #yield ''.join(random.choices(string.ascii_letters + string.digits, k=1))
 
-def gen_restler_fuzzable_int(**kwargs):
-    return placeholder_value_generator() 
+def get_restler_fuzzable_int(**kwargs):
+    while True:
+        yield get_next_val("sample_file_name")
+def gen_restler_fuzzable_string(**kwargs):
+    while True:
+        yield get_next_string("sample_file_name")
+
+def gen_restler_fuzzable_string_unquoted(**kwargs):
+    while True:
+        yield get_next_unquoted_string("sample_file_name")
 def gen_restler_fuzzable_number(**kwargs):
     while True:
         yield get_next_number("sample_file_name")
@@ -56,6 +82,8 @@ def gen_restler_fuzzable_number(**kwargs):
 
 value_generators = {
     "restler_fuzzable_int": gen_restler_fuzzable_int,
-    "restler_fuzzable_number": gen_restler_fuzzable_number
+    "restler_fuzzable_number": gen_restler_fuzzable_number,
+    "restler_fuzzable_string": gen_restler_fuzzable_string,
+    "restler_fuzzable_string_unquoted": gen_restler_fuzzable_string_unquoted
 }
 #print(get_next_val("sample_file_name_not_used"))
