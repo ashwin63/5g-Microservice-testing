@@ -65,7 +65,7 @@ def get_next_number(filename):
         if re.match(r'^\-?\d+$', mutated_output):  # Match integers (possibly negative)
             return mutated_output
 
-def get_restler_fuzzable_int(**kwargs):
+def gen_restler_fuzzable_int(**kwargs):
     while True:
         yield get_next_val("sample_file_name")
 def gen_restler_fuzzable_string(**kwargs):
