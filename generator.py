@@ -5,6 +5,7 @@ import string
 import itertools
 import subprocess
 import re
+import base64  
 random_seed=time.time()
 #print(f"Value generator random seed: {random_seed}")
 random.seed(random_seed)
