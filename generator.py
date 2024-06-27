@@ -8,7 +8,6 @@ import re
 random_seed=time.time()
 #print(f"Value generator random seed: {random_seed}")
 random.seed(random_seed)
-
 EXAMPLE_ARG = "examples"
 
 def get_next_val(filename):
@@ -33,6 +32,14 @@ def get_next_val_char(filename):
     command = 'echo "a" | radamsa --mutations num'
     result = subprocess.run(command, shell=True, capture_output=True, text=True) 
     return result.stdout
+def get_next_number(filename):
+    while True:
+        command = 'echo "12345" | radamsa --mutations num'  # Using a simple base number for mutations
+        result = subprocess.run(command, shell=True, capture_output=True, text=True)
+        mutated_output = result.stdout.strip()
+        # Filter the output to ensure it's a positive number
+        if re.match(r'^\-?\d+$', mutated_output):  # Match integers (possibly negative)
+            return mutated_output
 def placeholder_value_generator():
     while True:
         #raise Exception("Testing")
@@ -42,9 +49,13 @@ def placeholder_value_generator():
 
 def gen_restler_fuzzable_int(**kwargs):
     return placeholder_value_generator() 
-
+def gen_restler_fuzzable_number(**kwargs):
+    while True:
+        yield get_next_number("sample_file_name")
+    
 
 value_generators = {
     "restler_fuzzable_int": gen_restler_fuzzable_int
+    "restler_fuzzable_number": gen_restler_fuzzable_number,
 }
 #print(get_next_val("sample_file_name_not_used"))
