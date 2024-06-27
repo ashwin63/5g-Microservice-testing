@@ -38,10 +38,20 @@ def get_next_string(filename: str) -> str:
     Returns:
     - str: The generated string.
     """
-    command = 'echo "example_string" | radamsa'
-    result = subprocess.run(command, shell=True, capture_output=True, text=True)
-    return result.stdout.strip()
-
+    command = 'echo "fuzzstring" | radamsa'
+    result = subprocess.run(command, shell=True, capture_output=True)
+    
+    # Handle the output as bytes
+    mutated_output = result.stdout
+    
+    try:
+        # Attempt to decode the output as UTF-8
+        decoded_output = mutated_output.decode('utf-8')
+        return decoded_output.strip()
+    except UnicodeDecodeError:
+        # Handle non-decodable bytes (optional)
+        # Example: return base64 encoded output
+        return base64.b64encode(mutated_output).decode('utf-8')
 def get_next_unquoted_string(filename: str) -> str:
     """
     Generate a mutated string using Radamsa and ensure it is unquoted.
