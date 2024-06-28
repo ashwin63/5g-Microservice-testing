@@ -94,7 +94,7 @@ def gen_restler_fuzzable_number(**kwargs):
 value_generators = {
     "restler_fuzzable_int": gen_restler_fuzzable_int,
     "restler_fuzzable_number": gen_restler_fuzzable_number,
-    "restler_fuzzable_string": gen_restler_fuzzable_string,
-    "restler_fuzzable_string_unquoted": gen_restler_fuzzable_string_unquoted
+    "restler_fuzzable_string": gen_restler_fuzzable_string
+   # "restler_fuzzable_string_unquoted": gen_restler_fuzzable_string_unquoted
 }
 #print(get_next_val("sample_file_name_not_used"))
