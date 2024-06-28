@@ -15,20 +15,16 @@ def get_next_val(filename):
     #return subprocess.run('echo "ashwin"',capture_output= True)
     #return subprocess.run(['"ashwin" |radamsa'], capture_output=True)
     while True:
-        command = 'echo "12345" | radamsa --mutations num'  # Using a simple base number for mutations
-        result = subprocess.run(command, shell=True, capture_output=True, text=True)
-        mutated_output = result.stdout.strip()
-        # Filter the output to ensure it's a positive number
-        if re.match(r'^\-?\d+$', mutated_output):  # Match integers (possibly negative)
-            try:
-                val = int(mutated_output)
-                if -2**31 <= val <= 2**31 - 1:  # Ensure it's within int32 range
-                    with open('/RESTler/json/output.txt', 'a') as file:
-                        file.write(str(val))
-                        file.write('\n')
-                    return val
-            except ValueError:
-                pass  # Handle conversion to int errors
+        command = 'echo "fuzzstring" | radamsa'
+        result = subprocess.run(command, shell=True, capture_output=True)
+        
+        mutated_output = result.stdout.decode('utf-8', errors='ignore')
+        
+        # Filter to include only lowercase alphabetic characters
+        filtered_output = ''.join(filter(str.isalpha, mutated_output)).lower()
+        
+        if filtered_output:
+            return filtered_output.strip()
 def get_next_string(filename: str) -> str:
     """
     Generate a mutated string using Radamsa.
