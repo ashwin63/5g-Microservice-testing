@@ -1,0 +1,44 @@
+Random seed: 12345
+Grammar schema file '/Users/ashwin/Desktop/test/restler-fuzzer/restler/grammar.json' does not exist.
+Setting fuzzing schemes: bfs
+2024-07-03 11:12:49.445: Going to fuzz a set with 6 requests
+2024-07-03 11:12:49.445: Request-0: Value Combinations: 20
+2024-07-03 11:12:49.445: Request-1: Value Combinations: 20
+2024-07-03 11:12:49.445: Request-2: Value Combinations: 20
+2024-07-03 11:12:49.445: Request-3: Value Combinations: 20
+2024-07-03 11:12:49.445: Request-4: Value Combinations: 20
+2024-07-03 11:12:49.445: Request-5: Value Combinations: 20
+2024-07-03 11:12:49.445: Avg. Value Combinations per Request: 20
+2024-07-03 11:12:49.445: Median Value Combinations per Request: 20.0
+2024-07-03 11:12:49.445: Min Value Combinations per Request: 20
+2024-07-03 11:12:49.445: Max Value Combinations per Request: 20
+2024-07-03 11:12:49.445: Total dependencies: 6
+
+2024-07-03 11:12:49.466: Generation: 1 / Sequences Collection Size: 3 
+(After bfs Extend)
+
+Exhausted collection...
+2024-07-03 11:12:50.635: Generation: 1 / Sequences Collection Size: 0 
+(After bfs Render)
+
+2024-07-03 11:12:50.636: Final Swagger spec coverage: 0 / 6
+2024-07-03 11:12:50.636: Rendered requests: 0 / 6
+2024-07-03 11:12:50.636: Rendered requests with "valid" status codes: 0 / 0
+2024-07-03 11:12:50.636: Num fully valid requests (no resource creation failures): 0
+2024-07-03 11:12:50.636: Num requests not rendered due to invalid sequence re-renders: 0
+2024-07-03 11:12:50.636: Num invalid requests caused by failed resource creations: 0
+2024-07-03 11:12:50.636: Total Creations of Dyn Objects: 0
+2024-07-03 11:12:50.636: Total Requests Sent: {'gc': 0, 'main_driver': 0, 'MutationChecker': 0}
+2024-07-03 11:12:50.636: Bug Buckets: {}
+
+Testing completed -- below are the final stats:
+
+2024-07-03 11:12:50.643: Final Swagger spec coverage: 0 / 6
+2024-07-03 11:12:50.643: Rendered requests: 0 / 6
+2024-07-03 11:12:50.643: Rendered requests with "valid" status codes: 0 / 0
+2024-07-03 11:12:50.643: Num fully valid requests (no resource creation failures): 0
+2024-07-03 11:12:50.643: Num requests not rendered due to invalid sequence re-renders: 0
+2024-07-03 11:12:50.643: Num invalid requests caused by failed resource creations: 0
+2024-07-03 11:12:50.643: Total Creations of Dyn Objects: 0
+2024-07-03 11:12:50.643: Total Requests Sent: {'gc': 0, 'main_driver': 0, 'MutationChecker': 0}
+2024-07-03 11:12:50.643: Bug Buckets: {}

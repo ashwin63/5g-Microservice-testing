@@ -1,0 +1,2052 @@
+
+Generation-1: Rendering Sequence-1
+
+	Request: 1 (Remaining candidate combinations: 20)
+	Request hash: 1950cbddab7726489624c3d346d3426561c921ad
+
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'blog'
+		- restler_static_string: '/'
+		- restler_static_string: 'posts'
+		- restler_static_string: '?'
+		- restler_static_string: 'page='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '&'
+		- restler_static_string: 'per_page='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:49.475: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.475: Re-creating connection and re-trying.
+2024-07-03 11:12:49.476: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.477: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:49.488: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:49.489: MutationChecker Testing request: /api/blog/posts GET
+2024-07-03 11:12:49.489: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-1
+
+	Request: 1 (Remaining candidate combinations: 19)
+	Request hash: 1950cbddab7726489624c3d346d3426561c921ad
+
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'blog'
+		- restler_static_string: '/'
+		- restler_static_string: 'posts'
+		- restler_static_string: '?'
+		- restler_static_string: 'page='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '&'
+		- restler_static_string: 'per_page='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:49.493: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.493: Re-creating connection and re-trying.
+2024-07-03 11:12:49.494: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.495: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:49.499: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:49.500: MutationChecker Testing request: /api/blog/posts GET
+2024-07-03 11:12:49.500: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-1
+
+	Request: 1 (Remaining candidate combinations: 18)
+	Request hash: 1950cbddab7726489624c3d346d3426561c921ad
+
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'blog'
+		- restler_static_string: '/'
+		- restler_static_string: 'posts'
+		- restler_static_string: '?'
+		- restler_static_string: 'page='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '&'
+		- restler_static_string: 'per_page='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:49.504: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.504: Re-creating connection and re-trying.
+2024-07-03 11:12:49.505: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.505: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:49.510: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:49.510: MutationChecker Testing request: /api/blog/posts GET
+2024-07-03 11:12:49.511: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-1
+
+	Request: 1 (Remaining candidate combinations: 17)
+	Request hash: 1950cbddab7726489624c3d346d3426561c921ad
+
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'blog'
+		- restler_static_string: '/'
+		- restler_static_string: 'posts'
+		- restler_static_string: '?'
+		- restler_static_string: 'page='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '&'
+		- restler_static_string: 'per_page='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:49.514: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.515: Re-creating connection and re-trying.
+2024-07-03 11:12:49.516: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.516: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:49.521: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:49.522: MutationChecker Testing request: /api/blog/posts GET
+2024-07-03 11:12:49.523: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-1
+
+	Request: 1 (Remaining candidate combinations: 16)
+	Request hash: 1950cbddab7726489624c3d346d3426561c921ad
+
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'blog'
+		- restler_static_string: '/'
+		- restler_static_string: 'posts'
+		- restler_static_string: '?'
+		- restler_static_string: 'page='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '&'
+		- restler_static_string: 'per_page='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:49.527: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.528: Re-creating connection and re-trying.
+2024-07-03 11:12:49.528: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.529: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:49.534: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:49.534: MutationChecker Testing request: /api/blog/posts GET
+2024-07-03 11:12:49.535: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-1
+
+	Request: 1 (Remaining candidate combinations: 15)
+	Request hash: 1950cbddab7726489624c3d346d3426561c921ad
+
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'blog'
+		- restler_static_string: '/'
+		- restler_static_string: 'posts'
+		- restler_static_string: '?'
+		- restler_static_string: 'page='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '&'
+		- restler_static_string: 'per_page='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:49.538: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.539: Re-creating connection and re-trying.
+2024-07-03 11:12:49.540: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.540: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:49.545: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:49.545: MutationChecker Testing request: /api/blog/posts GET
+2024-07-03 11:12:49.546: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-1
+
+	Request: 1 (Remaining candidate combinations: 14)
+	Request hash: 1950cbddab7726489624c3d346d3426561c921ad
+
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'blog'
+		- restler_static_string: '/'
+		- restler_static_string: 'posts'
+		- restler_static_string: '?'
+		- restler_static_string: 'page='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '&'
+		- restler_static_string: 'per_page='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:49.549: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.549: Re-creating connection and re-trying.
+2024-07-03 11:12:49.550: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.550: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:49.554: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:49.555: MutationChecker Testing request: /api/blog/posts GET
+2024-07-03 11:12:49.555: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-1
+
+	Request: 1 (Remaining candidate combinations: 13)
+	Request hash: 1950cbddab7726489624c3d346d3426561c921ad
+
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'blog'
+		- restler_static_string: '/'
+		- restler_static_string: 'posts'
+		- restler_static_string: '?'
+		- restler_static_string: 'page='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '&'
+		- restler_static_string: 'per_page='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:49.559: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.559: Re-creating connection and re-trying.
+2024-07-03 11:12:49.560: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.560: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:49.564: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:49.565: MutationChecker Testing request: /api/blog/posts GET
+2024-07-03 11:12:49.565: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-1
+
+	Request: 1 (Remaining candidate combinations: 12)
+	Request hash: 1950cbddab7726489624c3d346d3426561c921ad
+
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'blog'
+		- restler_static_string: '/'
+		- restler_static_string: 'posts'
+		- restler_static_string: '?'
+		- restler_static_string: 'page='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '&'
+		- restler_static_string: 'per_page='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:49.569: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.569: Re-creating connection and re-trying.
+2024-07-03 11:12:49.570: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.570: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:49.575: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:49.576: MutationChecker Testing request: /api/blog/posts GET
+2024-07-03 11:12:49.576: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-1
+
+	Request: 1 (Remaining candidate combinations: 11)
+	Request hash: 1950cbddab7726489624c3d346d3426561c921ad
+
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'blog'
+		- restler_static_string: '/'
+		- restler_static_string: 'posts'
+		- restler_static_string: '?'
+		- restler_static_string: 'page='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '&'
+		- restler_static_string: 'per_page='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:49.581: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.581: Re-creating connection and re-trying.
+2024-07-03 11:12:49.582: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.582: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:49.587: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:49.588: MutationChecker Testing request: /api/blog/posts GET
+2024-07-03 11:12:49.588: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-1
+
+	Request: 1 (Remaining candidate combinations: 10)
+	Request hash: 1950cbddab7726489624c3d346d3426561c921ad
+
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'blog'
+		- restler_static_string: '/'
+		- restler_static_string: 'posts'
+		- restler_static_string: '?'
+		- restler_static_string: 'page='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '&'
+		- restler_static_string: 'per_page='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:49.593: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.593: Re-creating connection and re-trying.
+2024-07-03 11:12:49.594: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.594: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:49.599: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:49.600: MutationChecker Testing request: /api/blog/posts GET
+2024-07-03 11:12:49.600: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-1
+
+	Request: 1 (Remaining candidate combinations: 9)
+	Request hash: 1950cbddab7726489624c3d346d3426561c921ad
+
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'blog'
+		- restler_static_string: '/'
+		- restler_static_string: 'posts'
+		- restler_static_string: '?'
+		- restler_static_string: 'page='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '&'
+		- restler_static_string: 'per_page='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:49.604: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.604: Re-creating connection and re-trying.
+2024-07-03 11:12:49.605: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.606: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:49.644: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:49.656: MutationChecker Testing request: /api/blog/posts GET
+2024-07-03 11:12:49.658: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-1
+
+	Request: 1 (Remaining candidate combinations: 8)
+	Request hash: 1950cbddab7726489624c3d346d3426561c921ad
+
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'blog'
+		- restler_static_string: '/'
+		- restler_static_string: 'posts'
+		- restler_static_string: '?'
+		- restler_static_string: 'page='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '&'
+		- restler_static_string: 'per_page='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:49.674: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.675: Re-creating connection and re-trying.
+2024-07-03 11:12:49.675: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.676: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:49.681: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:49.683: MutationChecker Testing request: /api/blog/posts GET
+2024-07-03 11:12:49.684: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-1
+
+	Request: 1 (Remaining candidate combinations: 7)
+	Request hash: 1950cbddab7726489624c3d346d3426561c921ad
+
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'blog'
+		- restler_static_string: '/'
+		- restler_static_string: 'posts'
+		- restler_static_string: '?'
+		- restler_static_string: 'page='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '&'
+		- restler_static_string: 'per_page='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:49.688: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.688: Re-creating connection and re-trying.
+2024-07-03 11:12:49.689: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.689: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:49.697: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:49.699: MutationChecker Testing request: /api/blog/posts GET
+2024-07-03 11:12:49.700: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-1
+
+	Request: 1 (Remaining candidate combinations: 6)
+	Request hash: 1950cbddab7726489624c3d346d3426561c921ad
+
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'blog'
+		- restler_static_string: '/'
+		- restler_static_string: 'posts'
+		- restler_static_string: '?'
+		- restler_static_string: 'page='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '&'
+		- restler_static_string: 'per_page='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:49.707: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.708: Re-creating connection and re-trying.
+2024-07-03 11:12:49.709: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.709: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:49.715: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:49.716: MutationChecker Testing request: /api/blog/posts GET
+2024-07-03 11:12:49.717: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-1
+
+	Request: 1 (Remaining candidate combinations: 5)
+	Request hash: 1950cbddab7726489624c3d346d3426561c921ad
+
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'blog'
+		- restler_static_string: '/'
+		- restler_static_string: 'posts'
+		- restler_static_string: '?'
+		- restler_static_string: 'page='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '&'
+		- restler_static_string: 'per_page='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:49.722: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.722: Re-creating connection and re-trying.
+2024-07-03 11:12:49.724: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.724: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:49.729: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:49.730: MutationChecker Testing request: /api/blog/posts GET
+2024-07-03 11:12:49.730: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-1
+
+	Request: 1 (Remaining candidate combinations: 4)
+	Request hash: 1950cbddab7726489624c3d346d3426561c921ad
+
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'blog'
+		- restler_static_string: '/'
+		- restler_static_string: 'posts'
+		- restler_static_string: '?'
+		- restler_static_string: 'page='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '&'
+		- restler_static_string: 'per_page='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:49.734: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.735: Re-creating connection and re-trying.
+2024-07-03 11:12:49.736: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.736: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:49.743: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:49.743: MutationChecker Testing request: /api/blog/posts GET
+2024-07-03 11:12:49.744: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-1
+
+	Request: 1 (Remaining candidate combinations: 3)
+	Request hash: 1950cbddab7726489624c3d346d3426561c921ad
+
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'blog'
+		- restler_static_string: '/'
+		- restler_static_string: 'posts'
+		- restler_static_string: '?'
+		- restler_static_string: 'page='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '&'
+		- restler_static_string: 'per_page='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:49.747: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.747: Re-creating connection and re-trying.
+2024-07-03 11:12:49.748: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.748: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:49.755: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:49.756: MutationChecker Testing request: /api/blog/posts GET
+2024-07-03 11:12:49.756: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-1
+
+	Request: 1 (Remaining candidate combinations: 2)
+	Request hash: 1950cbddab7726489624c3d346d3426561c921ad
+
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'blog'
+		- restler_static_string: '/'
+		- restler_static_string: 'posts'
+		- restler_static_string: '?'
+		- restler_static_string: 'page='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '&'
+		- restler_static_string: 'per_page='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:49.760: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.760: Re-creating connection and re-trying.
+2024-07-03 11:12:49.761: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.761: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:49.767: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:49.768: MutationChecker Testing request: /api/blog/posts GET
+2024-07-03 11:12:49.768: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-1
+
+	Request: 1 (Remaining candidate combinations: 1)
+	Request hash: 1950cbddab7726489624c3d346d3426561c921ad
+
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'blog'
+		- restler_static_string: '/'
+		- restler_static_string: 'posts'
+		- restler_static_string: '?'
+		- restler_static_string: 'page='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '&'
+		- restler_static_string: 'per_page='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:49.772: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.773: Re-creating connection and re-trying.
+2024-07-03 11:12:49.774: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.774: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:49.783: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:49.785: MutationChecker Testing request: /api/blog/posts GET
+2024-07-03 11:12:49.786: Checker: MutationChecker kicks out
+
+2024-07-03 11:12:49.789: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:49.790: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-2
+
+	Request: 1 (Remaining candidate combinations: 20)
+	Request hash: 4fc287fccdb64d22a7d070386dacdde9207540d0
+
+		- restler_static_string: 'POST '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'blog'
+		- restler_static_string: '/'
+		- restler_static_string: 'posts'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "id":'
+		+ restler_fuzzable_int: [99, 12, ...]
+		- restler_static_string: ',\n    "body":'
+		- restler_fuzzable_string: '"my first blog post"'
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:49.795: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.798: Re-creating connection and re-trying.
+2024-07-03 11:12:49.803: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.803: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:49.804: Parser exception: 'Error: all of the expected dynamic objects were not present in the response.'.
+2024-07-03 11:12:49.818: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:49.819: MutationChecker Testing request: /api/blog/posts POST
+2024-07-03 11:12:49.820: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-2
+
+	Request: 1 (Remaining candidate combinations: 19)
+	Request hash: 4fc287fccdb64d22a7d070386dacdde9207540d0
+
+		- restler_static_string: 'POST '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'blog'
+		- restler_static_string: '/'
+		- restler_static_string: 'posts'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "id":'
+		+ restler_fuzzable_int: [99, 12, ...]
+		- restler_static_string: ',\n    "body":'
+		- restler_fuzzable_string: '"my first blog post"'
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:49.825: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.825: Re-creating connection and re-trying.
+2024-07-03 11:12:49.827: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.828: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:49.828: Parser exception: 'Error: all of the expected dynamic objects were not present in the response.'.
+2024-07-03 11:12:49.834: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:49.835: MutationChecker Testing request: /api/blog/posts POST
+2024-07-03 11:12:49.835: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-2
+
+	Request: 1 (Remaining candidate combinations: 18)
+	Request hash: 4fc287fccdb64d22a7d070386dacdde9207540d0
+
+		- restler_static_string: 'POST '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'blog'
+		- restler_static_string: '/'
+		- restler_static_string: 'posts'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "id":'
+		+ restler_fuzzable_int: [99, 12, ...]
+		- restler_static_string: ',\n    "body":'
+		- restler_fuzzable_string: '"my first blog post"'
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:49.839: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.839: Re-creating connection and re-trying.
+2024-07-03 11:12:49.840: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.840: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:49.841: Parser exception: 'Error: all of the expected dynamic objects were not present in the response.'.
+2024-07-03 11:12:49.849: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:49.850: MutationChecker Testing request: /api/blog/posts POST
+2024-07-03 11:12:49.850: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-2
+
+	Request: 1 (Remaining candidate combinations: 17)
+	Request hash: 4fc287fccdb64d22a7d070386dacdde9207540d0
+
+		- restler_static_string: 'POST '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'blog'
+		- restler_static_string: '/'
+		- restler_static_string: 'posts'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "id":'
+		+ restler_fuzzable_int: [99, 12, ...]
+		- restler_static_string: ',\n    "body":'
+		- restler_fuzzable_string: '"my first blog post"'
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:49.857: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.858: Re-creating connection and re-trying.
+2024-07-03 11:12:49.859: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.860: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:49.861: Parser exception: 'Error: all of the expected dynamic objects were not present in the response.'.
+2024-07-03 11:12:49.869: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:49.870: MutationChecker Testing request: /api/blog/posts POST
+2024-07-03 11:12:49.870: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-2
+
+	Request: 1 (Remaining candidate combinations: 16)
+	Request hash: 4fc287fccdb64d22a7d070386dacdde9207540d0
+
+		- restler_static_string: 'POST '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'blog'
+		- restler_static_string: '/'
+		- restler_static_string: 'posts'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "id":'
+		+ restler_fuzzable_int: [99, 12, ...]
+		- restler_static_string: ',\n    "body":'
+		- restler_fuzzable_string: '"my first blog post"'
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:49.877: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.877: Re-creating connection and re-trying.
+2024-07-03 11:12:49.878: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.878: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:49.879: Parser exception: 'Error: all of the expected dynamic objects were not present in the response.'.
+2024-07-03 11:12:49.888: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:49.889: MutationChecker Testing request: /api/blog/posts POST
+2024-07-03 11:12:49.890: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-2
+
+	Request: 1 (Remaining candidate combinations: 15)
+	Request hash: 4fc287fccdb64d22a7d070386dacdde9207540d0
+
+		- restler_static_string: 'POST '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'blog'
+		- restler_static_string: '/'
+		- restler_static_string: 'posts'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "id":'
+		+ restler_fuzzable_int: [99, 12, ...]
+		- restler_static_string: ',\n    "body":'
+		- restler_fuzzable_string: '"my first blog post"'
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:49.894: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.896: Re-creating connection and re-trying.
+2024-07-03 11:12:49.898: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.898: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:49.899: Parser exception: 'Error: all of the expected dynamic objects were not present in the response.'.
+2024-07-03 11:12:49.908: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:49.910: MutationChecker Testing request: /api/blog/posts POST
+2024-07-03 11:12:49.910: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-2
+
+	Request: 1 (Remaining candidate combinations: 14)
+	Request hash: 4fc287fccdb64d22a7d070386dacdde9207540d0
+
+		- restler_static_string: 'POST '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'blog'
+		- restler_static_string: '/'
+		- restler_static_string: 'posts'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "id":'
+		+ restler_fuzzable_int: [99, 12, ...]
+		- restler_static_string: ',\n    "body":'
+		- restler_fuzzable_string: '"my first blog post"'
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:49.920: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.920: Re-creating connection and re-trying.
+2024-07-03 11:12:49.921: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.922: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:49.923: Parser exception: 'Error: all of the expected dynamic objects were not present in the response.'.
+2024-07-03 11:12:49.931: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:49.932: MutationChecker Testing request: /api/blog/posts POST
+2024-07-03 11:12:49.932: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-2
+
+	Request: 1 (Remaining candidate combinations: 13)
+	Request hash: 4fc287fccdb64d22a7d070386dacdde9207540d0
+
+		- restler_static_string: 'POST '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'blog'
+		- restler_static_string: '/'
+		- restler_static_string: 'posts'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "id":'
+		+ restler_fuzzable_int: [99, 12, ...]
+		- restler_static_string: ',\n    "body":'
+		- restler_fuzzable_string: '"my first blog post"'
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:49.938: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.939: Re-creating connection and re-trying.
+2024-07-03 11:12:49.940: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.941: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:49.943: Parser exception: 'Error: all of the expected dynamic objects were not present in the response.'.
+2024-07-03 11:12:49.952: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:49.954: MutationChecker Testing request: /api/blog/posts POST
+2024-07-03 11:12:49.955: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-2
+
+	Request: 1 (Remaining candidate combinations: 12)
+	Request hash: 4fc287fccdb64d22a7d070386dacdde9207540d0
+
+		- restler_static_string: 'POST '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'blog'
+		- restler_static_string: '/'
+		- restler_static_string: 'posts'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "id":'
+		+ restler_fuzzable_int: [99, 12, ...]
+		- restler_static_string: ',\n    "body":'
+		- restler_fuzzable_string: '"my first blog post"'
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:49.995: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:49.997: Re-creating connection and re-trying.
+2024-07-03 11:12:50.001: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.003: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:50.004: Parser exception: 'Error: all of the expected dynamic objects were not present in the response.'.
+2024-07-03 11:12:50.013: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:50.015: MutationChecker Testing request: /api/blog/posts POST
+2024-07-03 11:12:50.016: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-2
+
+	Request: 1 (Remaining candidate combinations: 11)
+	Request hash: 4fc287fccdb64d22a7d070386dacdde9207540d0
+
+		- restler_static_string: 'POST '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'blog'
+		- restler_static_string: '/'
+		- restler_static_string: 'posts'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "id":'
+		+ restler_fuzzable_int: [99, 12, ...]
+		- restler_static_string: ',\n    "body":'
+		- restler_fuzzable_string: '"my first blog post"'
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:50.022: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.023: Re-creating connection and re-trying.
+2024-07-03 11:12:50.023: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.024: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:50.025: Parser exception: 'Error: all of the expected dynamic objects were not present in the response.'.
+2024-07-03 11:12:50.034: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:50.036: MutationChecker Testing request: /api/blog/posts POST
+2024-07-03 11:12:50.036: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-2
+
+	Request: 1 (Remaining candidate combinations: 10)
+	Request hash: 4fc287fccdb64d22a7d070386dacdde9207540d0
+
+		- restler_static_string: 'POST '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'blog'
+		- restler_static_string: '/'
+		- restler_static_string: 'posts'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "id":'
+		+ restler_fuzzable_int: [99, 12, ...]
+		- restler_static_string: ',\n    "body":'
+		- restler_fuzzable_string: '"my first blog post"'
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:50.043: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.043: Re-creating connection and re-trying.
+2024-07-03 11:12:50.044: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.045: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:50.046: Parser exception: 'Error: all of the expected dynamic objects were not present in the response.'.
+2024-07-03 11:12:50.058: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:50.060: MutationChecker Testing request: /api/blog/posts POST
+2024-07-03 11:12:50.060: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-2
+
+	Request: 1 (Remaining candidate combinations: 9)
+	Request hash: 4fc287fccdb64d22a7d070386dacdde9207540d0
+
+		- restler_static_string: 'POST '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'blog'
+		- restler_static_string: '/'
+		- restler_static_string: 'posts'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "id":'
+		+ restler_fuzzable_int: [99, 12, ...]
+		- restler_static_string: ',\n    "body":'
+		- restler_fuzzable_string: '"my first blog post"'
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:50.066: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.066: Re-creating connection and re-trying.
+2024-07-03 11:12:50.068: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.068: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:50.069: Parser exception: 'Error: all of the expected dynamic objects were not present in the response.'.
+2024-07-03 11:12:50.077: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:50.078: MutationChecker Testing request: /api/blog/posts POST
+2024-07-03 11:12:50.079: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-2
+
+	Request: 1 (Remaining candidate combinations: 8)
+	Request hash: 4fc287fccdb64d22a7d070386dacdde9207540d0
+
+		- restler_static_string: 'POST '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'blog'
+		- restler_static_string: '/'
+		- restler_static_string: 'posts'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "id":'
+		+ restler_fuzzable_int: [99, 12, ...]
+		- restler_static_string: ',\n    "body":'
+		- restler_fuzzable_string: '"my first blog post"'
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:50.085: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.085: Re-creating connection and re-trying.
+2024-07-03 11:12:50.087: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.087: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:50.087: Parser exception: 'Error: all of the expected dynamic objects were not present in the response.'.
+2024-07-03 11:12:50.097: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:50.098: MutationChecker Testing request: /api/blog/posts POST
+2024-07-03 11:12:50.098: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-2
+
+	Request: 1 (Remaining candidate combinations: 7)
+	Request hash: 4fc287fccdb64d22a7d070386dacdde9207540d0
+
+		- restler_static_string: 'POST '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'blog'
+		- restler_static_string: '/'
+		- restler_static_string: 'posts'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "id":'
+		+ restler_fuzzable_int: [99, 12, ...]
+		- restler_static_string: ',\n    "body":'
+		- restler_fuzzable_string: '"my first blog post"'
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:50.104: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.105: Re-creating connection and re-trying.
+2024-07-03 11:12:50.106: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.107: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:50.107: Parser exception: 'Error: all of the expected dynamic objects were not present in the response.'.
+2024-07-03 11:12:50.115: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:50.116: MutationChecker Testing request: /api/blog/posts POST
+2024-07-03 11:12:50.116: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-2
+
+	Request: 1 (Remaining candidate combinations: 6)
+	Request hash: 4fc287fccdb64d22a7d070386dacdde9207540d0
+
+		- restler_static_string: 'POST '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'blog'
+		- restler_static_string: '/'
+		- restler_static_string: 'posts'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "id":'
+		+ restler_fuzzable_int: [99, 12, ...]
+		- restler_static_string: ',\n    "body":'
+		- restler_fuzzable_string: '"my first blog post"'
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:50.122: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.122: Re-creating connection and re-trying.
+2024-07-03 11:12:50.123: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.126: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:50.127: Parser exception: 'Error: all of the expected dynamic objects were not present in the response.'.
+2024-07-03 11:12:50.134: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:50.135: MutationChecker Testing request: /api/blog/posts POST
+2024-07-03 11:12:50.136: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-2
+
+	Request: 1 (Remaining candidate combinations: 5)
+	Request hash: 4fc287fccdb64d22a7d070386dacdde9207540d0
+
+		- restler_static_string: 'POST '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'blog'
+		- restler_static_string: '/'
+		- restler_static_string: 'posts'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "id":'
+		+ restler_fuzzable_int: [99, 12, ...]
+		- restler_static_string: ',\n    "body":'
+		- restler_fuzzable_string: '"my first blog post"'
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:50.143: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.144: Re-creating connection and re-trying.
+2024-07-03 11:12:50.146: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.146: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:50.148: Parser exception: 'Error: all of the expected dynamic objects were not present in the response.'.
+2024-07-03 11:12:50.156: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:50.157: MutationChecker Testing request: /api/blog/posts POST
+2024-07-03 11:12:50.159: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-2
+
+	Request: 1 (Remaining candidate combinations: 4)
+	Request hash: 4fc287fccdb64d22a7d070386dacdde9207540d0
+
+		- restler_static_string: 'POST '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'blog'
+		- restler_static_string: '/'
+		- restler_static_string: 'posts'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "id":'
+		+ restler_fuzzable_int: [99, 12, ...]
+		- restler_static_string: ',\n    "body":'
+		- restler_fuzzable_string: '"my first blog post"'
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:50.166: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.167: Re-creating connection and re-trying.
+2024-07-03 11:12:50.167: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.168: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:50.168: Parser exception: 'Error: all of the expected dynamic objects were not present in the response.'.
+2024-07-03 11:12:50.175: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:50.176: MutationChecker Testing request: /api/blog/posts POST
+2024-07-03 11:12:50.176: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-2
+
+	Request: 1 (Remaining candidate combinations: 3)
+	Request hash: 4fc287fccdb64d22a7d070386dacdde9207540d0
+
+		- restler_static_string: 'POST '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'blog'
+		- restler_static_string: '/'
+		- restler_static_string: 'posts'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "id":'
+		+ restler_fuzzable_int: [99, 12, ...]
+		- restler_static_string: ',\n    "body":'
+		- restler_fuzzable_string: '"my first blog post"'
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:50.183: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.183: Re-creating connection and re-trying.
+2024-07-03 11:12:50.184: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.184: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:50.185: Parser exception: 'Error: all of the expected dynamic objects were not present in the response.'.
+2024-07-03 11:12:50.190: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:50.191: MutationChecker Testing request: /api/blog/posts POST
+2024-07-03 11:12:50.191: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-2
+
+	Request: 1 (Remaining candidate combinations: 2)
+	Request hash: 4fc287fccdb64d22a7d070386dacdde9207540d0
+
+		- restler_static_string: 'POST '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'blog'
+		- restler_static_string: '/'
+		- restler_static_string: 'posts'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "id":'
+		+ restler_fuzzable_int: [99, 12, ...]
+		- restler_static_string: ',\n    "body":'
+		- restler_fuzzable_string: '"my first blog post"'
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:50.197: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.198: Re-creating connection and re-trying.
+2024-07-03 11:12:50.199: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.199: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:50.200: Parser exception: 'Error: all of the expected dynamic objects were not present in the response.'.
+2024-07-03 11:12:50.207: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:50.208: MutationChecker Testing request: /api/blog/posts POST
+2024-07-03 11:12:50.208: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-2
+
+	Request: 1 (Remaining candidate combinations: 1)
+	Request hash: 4fc287fccdb64d22a7d070386dacdde9207540d0
+
+		- restler_static_string: 'POST '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'blog'
+		- restler_static_string: '/'
+		- restler_static_string: 'posts'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "id":'
+		+ restler_fuzzable_int: [99, 12, ...]
+		- restler_static_string: ',\n    "body":'
+		- restler_fuzzable_string: '"my first blog post"'
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:50.213: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.214: Re-creating connection and re-trying.
+2024-07-03 11:12:50.215: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.216: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:50.217: Parser exception: 'Error: all of the expected dynamic objects were not present in the response.'.
+2024-07-03 11:12:50.225: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:50.226: MutationChecker Testing request: /api/blog/posts POST
+2024-07-03 11:12:50.227: Checker: MutationChecker kicks out
+
+2024-07-03 11:12:50.229: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:50.230: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-3
+
+	Request: 1 (Remaining candidate combinations: 20)
+	Request hash: b6c2efcdc1799e1e6a48374d29a3c2b594bea52c
+
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'doc'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:50.236: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.237: Re-creating connection and re-trying.
+2024-07-03 11:12:50.238: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.239: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:50.247: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:50.250: MutationChecker Testing request: /api/doc GET
+2024-07-03 11:12:50.251: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-3
+
+	Request: 1 (Remaining candidate combinations: 19)
+	Request hash: b6c2efcdc1799e1e6a48374d29a3c2b594bea52c
+
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'doc'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:50.258: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.258: Re-creating connection and re-trying.
+2024-07-03 11:12:50.259: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.260: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:50.266: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:50.267: MutationChecker Testing request: /api/doc GET
+2024-07-03 11:12:50.267: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-3
+
+	Request: 1 (Remaining candidate combinations: 18)
+	Request hash: b6c2efcdc1799e1e6a48374d29a3c2b594bea52c
+
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'doc'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:50.272: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.273: Re-creating connection and re-trying.
+2024-07-03 11:12:50.274: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.274: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:50.283: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:50.285: MutationChecker Testing request: /api/doc GET
+2024-07-03 11:12:50.286: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-3
+
+	Request: 1 (Remaining candidate combinations: 17)
+	Request hash: b6c2efcdc1799e1e6a48374d29a3c2b594bea52c
+
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'doc'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:50.291: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.291: Re-creating connection and re-trying.
+2024-07-03 11:12:50.292: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.293: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:50.299: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:50.300: MutationChecker Testing request: /api/doc GET
+2024-07-03 11:12:50.300: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-3
+
+	Request: 1 (Remaining candidate combinations: 16)
+	Request hash: b6c2efcdc1799e1e6a48374d29a3c2b594bea52c
+
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'doc'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:50.306: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.307: Re-creating connection and re-trying.
+2024-07-03 11:12:50.308: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.309: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:50.318: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:50.319: MutationChecker Testing request: /api/doc GET
+2024-07-03 11:12:50.320: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-3
+
+	Request: 1 (Remaining candidate combinations: 15)
+	Request hash: b6c2efcdc1799e1e6a48374d29a3c2b594bea52c
+
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'doc'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:50.323: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.324: Re-creating connection and re-trying.
+2024-07-03 11:12:50.325: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.325: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:50.330: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:50.331: MutationChecker Testing request: /api/doc GET
+2024-07-03 11:12:50.332: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-3
+
+	Request: 1 (Remaining candidate combinations: 14)
+	Request hash: b6c2efcdc1799e1e6a48374d29a3c2b594bea52c
+
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'doc'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:50.336: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.337: Re-creating connection and re-trying.
+2024-07-03 11:12:50.337: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.342: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:50.350: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:50.352: MutationChecker Testing request: /api/doc GET
+2024-07-03 11:12:50.352: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-3
+
+	Request: 1 (Remaining candidate combinations: 13)
+	Request hash: b6c2efcdc1799e1e6a48374d29a3c2b594bea52c
+
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'doc'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:50.355: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.355: Re-creating connection and re-trying.
+2024-07-03 11:12:50.356: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.356: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:50.360: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:50.361: MutationChecker Testing request: /api/doc GET
+2024-07-03 11:12:50.361: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-3
+
+	Request: 1 (Remaining candidate combinations: 12)
+	Request hash: b6c2efcdc1799e1e6a48374d29a3c2b594bea52c
+
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'doc'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:50.366: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.367: Re-creating connection and re-trying.
+2024-07-03 11:12:50.368: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.369: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:50.376: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:50.376: MutationChecker Testing request: /api/doc GET
+2024-07-03 11:12:50.377: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-3
+
+	Request: 1 (Remaining candidate combinations: 11)
+	Request hash: b6c2efcdc1799e1e6a48374d29a3c2b594bea52c
+
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'doc'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:50.380: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.381: Re-creating connection and re-trying.
+2024-07-03 11:12:50.381: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.382: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:50.387: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:50.387: MutationChecker Testing request: /api/doc GET
+2024-07-03 11:12:50.388: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-3
+
+	Request: 1 (Remaining candidate combinations: 10)
+	Request hash: b6c2efcdc1799e1e6a48374d29a3c2b594bea52c
+
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'doc'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:50.392: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.392: Re-creating connection and re-trying.
+2024-07-03 11:12:50.393: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.393: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:50.398: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:50.399: MutationChecker Testing request: /api/doc GET
+2024-07-03 11:12:50.399: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-3
+
+	Request: 1 (Remaining candidate combinations: 9)
+	Request hash: b6c2efcdc1799e1e6a48374d29a3c2b594bea52c
+
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'doc'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:50.402: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.403: Re-creating connection and re-trying.
+2024-07-03 11:12:50.403: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.404: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:50.408: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:50.408: MutationChecker Testing request: /api/doc GET
+2024-07-03 11:12:50.408: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-3
+
+	Request: 1 (Remaining candidate combinations: 8)
+	Request hash: b6c2efcdc1799e1e6a48374d29a3c2b594bea52c
+
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'doc'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:50.411: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.411: Re-creating connection and re-trying.
+2024-07-03 11:12:50.412: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.412: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:50.416: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:50.417: MutationChecker Testing request: /api/doc GET
+2024-07-03 11:12:50.417: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-3
+
+	Request: 1 (Remaining candidate combinations: 7)
+	Request hash: b6c2efcdc1799e1e6a48374d29a3c2b594bea52c
+
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'doc'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:50.541: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.541: Re-creating connection and re-trying.
+2024-07-03 11:12:50.542: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.542: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:50.548: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:50.549: MutationChecker Testing request: /api/doc GET
+2024-07-03 11:12:50.550: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-3
+
+	Request: 1 (Remaining candidate combinations: 6)
+	Request hash: b6c2efcdc1799e1e6a48374d29a3c2b594bea52c
+
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'doc'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:50.555: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.555: Re-creating connection and re-trying.
+2024-07-03 11:12:50.557: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.557: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:50.572: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:50.574: MutationChecker Testing request: /api/doc GET
+2024-07-03 11:12:50.574: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-3
+
+	Request: 1 (Remaining candidate combinations: 5)
+	Request hash: b6c2efcdc1799e1e6a48374d29a3c2b594bea52c
+
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'doc'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:50.583: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.585: Re-creating connection and re-trying.
+2024-07-03 11:12:50.587: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.587: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:50.593: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:50.594: MutationChecker Testing request: /api/doc GET
+2024-07-03 11:12:50.594: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-3
+
+	Request: 1 (Remaining candidate combinations: 4)
+	Request hash: b6c2efcdc1799e1e6a48374d29a3c2b594bea52c
+
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'doc'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:50.598: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.598: Re-creating connection and re-trying.
+2024-07-03 11:12:50.599: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.599: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:50.604: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:50.605: MutationChecker Testing request: /api/doc GET
+2024-07-03 11:12:50.605: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-3
+
+	Request: 1 (Remaining candidate combinations: 3)
+	Request hash: b6c2efcdc1799e1e6a48374d29a3c2b594bea52c
+
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'doc'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:50.608: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.608: Re-creating connection and re-trying.
+2024-07-03 11:12:50.609: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.609: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:50.614: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:50.614: MutationChecker Testing request: /api/doc GET
+2024-07-03 11:12:50.615: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-3
+
+	Request: 1 (Remaining candidate combinations: 2)
+	Request hash: b6c2efcdc1799e1e6a48374d29a3c2b594bea52c
+
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'doc'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:50.618: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.618: Re-creating connection and re-trying.
+2024-07-03 11:12:50.619: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.619: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:50.624: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:50.624: MutationChecker Testing request: /api/doc GET
+2024-07-03 11:12:50.624: Checker: MutationChecker kicks out
+
+
+Generation-1: Rendering Sequence-3
+
+	Request: 1 (Remaining candidate combinations: 1)
+	Request hash: b6c2efcdc1799e1e6a48374d29a3c2b594bea52c
+
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'doc'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+2024-07-03 11:12:50.627: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.627: Re-creating connection and re-trying.
+2024-07-03 11:12:50.628: Unknown error: 'Exception Creating Socket: [Errno 61] Connection refused'
+2024-07-03 11:12:50.628: Failed to receive response.  Success: False, status: Creating, Response: Exception Creating Socket: [Errno 61] Connection refused
+2024-07-03 11:12:50.633: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:50.633: MutationChecker Testing request: /api/doc GET
+2024-07-03 11:12:50.634: Checker: MutationChecker kicks out
+
+2024-07-03 11:12:50.635: Checker: MutationChecker kicks in
+
+2024-07-03 11:12:50.635: Checker: MutationChecker kicks out
+

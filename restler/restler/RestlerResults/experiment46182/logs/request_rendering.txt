@@ -1,0 +1,134 @@
+
+2024-07-03 11:13:21.798: Generation-1
+2024-07-03 11:13:21.798: 	Rendered requests: 0 / 6
+2024-07-03 11:13:21.798: 	Rendered requests with "valid" status codes: 0 / 0
+2024-07-03 11:13:21.798: 	Rendered requests determined to be fully valid (no resource creation failures): 0 / 0
+2024-07-03 11:13:21.798: List of failing requests:
+-------------------------
+
+
+2024-07-03 11:13:21.799: 	Never Rendered requests:
+	Request: 0
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'blog'
+		- restler_static_string: '/'
+		- restler_static_string: 'posts'
+		- restler_static_string: '?'
+		- restler_static_string: 'page='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '&'
+		- restler_static_string: 'per_page='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+	Request: 1
+		- restler_static_string: 'POST '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'blog'
+		- restler_static_string: '/'
+		- restler_static_string: 'posts'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "id":'
+		+ restler_fuzzable_int: [99, 12, ...]
+		- restler_static_string: ',\n    "body":'
+		- restler_fuzzable_string: '"my first blog post"'
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+	Request: 2
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'blog'
+		- restler_static_string: '/'
+		- restler_static_string: 'posts'
+		- restler_static_string: '/'
+		- restler_static_string: '_READER_DELIM_api_blog_posts_post_id_READER_DELIM'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+	Request: 3
+		- restler_static_string: 'PUT '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'blog'
+		- restler_static_string: '/'
+		- restler_static_string: 'posts'
+		- restler_static_string: '/'
+		- restler_static_string: '_READER_DELIM_api_blog_posts_post_id_READER_DELIM'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "id":'
+		- restler_static_string: '_READER_DELIM_api_blog_posts_post_id_READER_DELIM'
+		- restler_static_string: ',\n    "body":'
+		- restler_static_string: '"_READER_DELIM_api_blog_posts_post_body_READER_DELIM"'
+		- restler_static_string: ',\n    "checksum":'
+		- restler_fuzzable_string: '"abcde"'
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+	Request: 4
+		- restler_static_string: 'DELETE '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'blog'
+		- restler_static_string: '/'
+		- restler_static_string: 'posts'
+		- restler_static_string: '/'
+		- restler_static_string: '_READER_DELIM_api_blog_posts_post_id_READER_DELIM'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+	Request: 5
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'doc'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+-------------------------
+
