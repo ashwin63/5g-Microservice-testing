@@ -11,7 +11,7 @@
   },
   "servers": [
     {
-      "url": "https://amf:8000",
+      "url": "https://nrf:8000",
       "variables": {
         "apiRoot": {
           "default": "https://example.com",
