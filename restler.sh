@@ -4,7 +4,7 @@
 # -r => uses radamsa
 filename="swagger.json"
 radamsa=false
-
+apk add dotnet6-sdk
 mkdir RESTLER_modified
 cd RESTLER_modified
 git clone https://github.com/ashwin63/restler-fuzzer.git
