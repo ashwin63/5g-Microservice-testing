@@ -5,6 +5,11 @@
 filename="swagger.json"
 radamsa=false
 
+mkdir RESTLER_modified
+cd RESTLER_modified
+git clone https://github.com/ashwin63/restler-fuzzer.git
+mkdir restler_bin
+python ./build-restler.py --dest_dir /RESTler/json/RESTLER_modified/restler_bin
 # Check for command line arguments and assign to filename if present
 if [ $# -gt 0 ]; then
     filename="$1"
