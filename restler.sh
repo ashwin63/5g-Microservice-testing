@@ -22,6 +22,9 @@ if [ "$3" == '-i' ]; then
     mkdir RESTLER_modified
     cd RESTLER_modified
     git clone https://github.com/ashwin63/restler-fuzzer.git
+    cd restler_fuzzer
+    git pull
+    cd ..
     mkdir restler_bin
     python ./restler-fuzzer/build-restler.py --dest_dir /RESTler/json/RESTLER_modified/restler_bin
 fi
