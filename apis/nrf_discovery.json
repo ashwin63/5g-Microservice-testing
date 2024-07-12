@@ -89,7 +89,7 @@
             "required": false,
             "schema": {
               "items": {
-                "$ref": "./TS29571_CommonData.yaml#/components/schemas/PlmnId"
+                "$ref": "#/components/schemas/PlmnId"
               },
               "minItems": 1,
               "type": "array"
@@ -104,7 +104,7 @@
             "required": false,
             "schema": {
               "items": {
-                "$ref": "./TS29571_CommonData.yaml#/components/schemas/PlmnId"
+                "$ref": "#/components/schemas/PlmnId"
               },
               "minItems": 1,
               "type": "array"
@@ -152,7 +152,7 @@
             "required": false,
             "schema": {
               "items": {
-                "$ref": "./TS29571_CommonData.yaml#/components/schemas/Snssai"
+                "$ref": "#/components/schemas/Snssai"
               },
               "minItems": 1,
               "type": "array"
@@ -202,7 +202,7 @@
             "name": "tai",
             "required": false,
             "schema": {
-              "$ref": "./TS29571_CommonData.yaml#/components/schemas/Tai"
+              "$ref": "#/components/schemas/Tai"
             },
             "style": "form"
           },
@@ -409,7 +409,7 @@
             "name": "chf-supported-plmn",
             "required": false,
             "schema": {
-              "$ref": "./TS29571_CommonData.yaml#/components/schemas/PlmnId"
+              "$ref": "#/components/schemas/PlmnId"
             },
             "style": "form"
           },
