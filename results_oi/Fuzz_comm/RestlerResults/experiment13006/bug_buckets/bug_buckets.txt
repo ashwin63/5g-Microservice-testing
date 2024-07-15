@@ -1,0 +1,7 @@
+InvalidValueChecker_connection_closed: 1
+Total Buckets: 1
+-------------
+InvalidValueChecker_connection_closed - Bug was reproduced - InvalidValueChecker_connection_closed_1.replay.txt
+Hash: InvalidValueChecker_connection_closed_d600b5f0f865b06000224a318b3a9a7a394bd862
+POST /namf-comm/v1/ue-contexts/fuzzstring/transfer HTTP/1.1\r\nAccept: application/json\r\nHost: amf:8000\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{\n    "reason":\n        \n    ,\n    "accessType":\n        \n    ,\n    "plmnId":\n        {\n            "mcc":fuzzstring,\n            "mnc":fuzzstring\n        }\n    ,\n    "regRequest":\n        {\n            "n1MessageClass":\n                \n            ,\n            "n1MessageContent":\n                {\n                    "contentId":fuzzstring\n                }\n            ,\n            "nfId":566048da-ed19-4cd3-8e0a-b7e0e1ec4d72\n        }\n    ,\n    "supportedFeatures":fuzzstring}\r\n
+--------------------------------------------------------------------------------

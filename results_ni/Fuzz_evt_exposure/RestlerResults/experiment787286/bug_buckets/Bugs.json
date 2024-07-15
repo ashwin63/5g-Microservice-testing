@@ -1,0 +1,9 @@
+{"bugs":[{
+    "filepath": "PayloadBodyChecker_500_1.json",
+    "reproducible": true,
+    "checker_name": "PayloadBodyChecker",
+    "error_code": "500"},{
+    "filepath": "PayloadBodyChecker_500_2.json",
+    "reproducible": true,
+    "checker_name": "PayloadBodyChecker",
+    "error_code": "500"}]}

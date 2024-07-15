@@ -1,0 +1,16 @@
+{
+    "status_code": "500",
+    "checker_name": "PayloadBodyChecker",
+    "reproducible": true,
+    "verb": "POST",
+    "endpoint": null,
+    "status_text": "Internal Server Error",
+    "request_sequence": [
+        {
+            "producer_timing_delay": 0,
+            "max_async_wait_time": 0,
+            "replay_request": "POST /namf-evts/v1/subscriptions HTTP/1.1\r\nAccept: application/json\r\nHost: amf:8000\r\nContent-Type: application/json\r\n\r\n{ \"fuzz\" : false }",
+            "response": "HTTP/1.1 500 Internal Server Error\r\nDate: Fri, 12 Jul 2024 17:00:17 GMT\r\nContent-Length: 0\r\n\r\n"
+        }
+    ]
+}

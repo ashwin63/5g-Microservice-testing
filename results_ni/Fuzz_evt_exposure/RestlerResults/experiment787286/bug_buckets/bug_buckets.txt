@@ -1,0 +1,11 @@
+PayloadBodyChecker_500: 2
+Total Buckets: 2
+-------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_1.replay.txt
+Hash: PayloadBodyChecker_500_eb2c285f507651f0d923c76b79abff638c9d326e
+POST /namf-evts/v1/subscriptions HTTP/1.1\r\nAccept: application/json\r\nHost: amf:8000\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"subscription":{ "fuzz" : false },"supportedFeatures":"fuzzstring"}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_2.replay.txt
+Hash: PayloadBodyChecker_500_c01c0ea3ce186ffdd52249954a85abe14c5eb507
+POST /namf-evts/v1/subscriptions HTTP/1.1\r\nAccept: application/json\r\nHost: amf:8000\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{ "fuzz" : false }
+--------------------------------------------------------------------------------

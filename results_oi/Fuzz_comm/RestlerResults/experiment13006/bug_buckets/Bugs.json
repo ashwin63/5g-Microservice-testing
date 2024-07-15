@@ -1,0 +1,5 @@
+{"bugs":[{
+    "filepath": "InvalidValueChecker_connection_closed_1.json",
+    "reproducible": true,
+    "checker_name": "InvalidValueChecker",
+    "error_code": "connection_closed"}]}
