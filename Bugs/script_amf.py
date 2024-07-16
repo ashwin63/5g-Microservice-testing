@@ -23,5 +23,6 @@ curl_command = f"""curl -X POST http://10.100.200.4:8000/namf-evts/v1/subscripti
 -H "Accept: application/json" \
 -H "Host: amf:8000" \
 -H "Content-Type: application/json" \
--d '{body}'"""system(curl_command)
+-d '{body}'"""
+system(curl_command)
 #print(curl_command)
