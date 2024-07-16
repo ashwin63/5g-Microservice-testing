@@ -19,6 +19,9 @@ body = replay_request[body_start:]
 
 print(body)
 # Construct the curl command
-curl_command = f"curl -X POST http://10.100.200.4:8000/namf-evts/v1/subscriptions HTTP/1.1\r\nAccept: application/json\r\nHost: amf:8000\r\nContent-Type: application/json\r\n\r\n" -d '{body}'"
-system(curl_command)
+curl_command = f"""curl -X POST http://10.100.200.4:8000/namf-evts/v1/subscriptions \
+-H "Accept: application/json" \
+-H "Host: amf:8000" \
+-H "Content-Type: application/json" \
+-d '{body}'"""system(curl_command)
 #print(curl_command)
