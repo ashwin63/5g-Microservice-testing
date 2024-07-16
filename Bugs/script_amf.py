@@ -1,7 +1,7 @@
 import json,os
 
 # Load the JSON file
-file_path = './InvalidValueChecker_connection_closed_1.json'
+file_path = './PayloadBodyChecker_500_1.json'
 with open(file_path, 'r') as file:
     data = json.load(file)
 
@@ -19,6 +19,6 @@ body = replay_request[body_start:]
 
 print(body)
 # Construct the curl command
-curl_command = f"curl -X POST /namf-evts/v1/subscriptions HTTP/1.1\r\nAccept: application/json\r\nHost: amf:8000\r\nContent-Type: application/json\r\n\r\n" -d '{body}'"
+curl_command = f"curl -X POST http://10.100.200.4:8000/namf-evts/v1/subscriptions HTTP/1.1\r\nAccept: application/json\r\nHost: amf:8000\r\nContent-Type: application/json\r\n\r\n" -d '{body}'"
 system(curl_command)
 #print(curl_command)
