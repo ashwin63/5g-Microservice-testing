@@ -1,7 +1,7 @@
 import json,os
 
 # Load the JSON file
-file_path = '../Fuzz_evt_exposure/RestlerResults/experiment787286/bug_buckets/PayloadBodyChecker_500_1.json'
+file_path = '/free5gc/5g-Microservice-testing/results_ni/Fuzz_evt_exposure/RestlerResults/experiment787286/bug_buckets/PayloadBodyChecker_500_1.json'
 with open(file_path, 'r') as file:
     data = json.load(file)
 
