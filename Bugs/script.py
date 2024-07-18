@@ -1,4 +1,4 @@
-import json
+import json, os
 
 # Load the JSON file
 file_path = './InvalidValueChecker_connection_closed_1.json'
@@ -20,5 +20,5 @@ body = replay_request[body_start:]
 print(body)
 # Construct the curl command
 curl_command = f"curl -X PUT http://nrf:8000/nf-instances/D0at>\x0bVA1CM -H \"Accept: application/json\" -H \"Content-Type: application/json\" -d '{body}'"
-
+os.system(curl_command)
 #print(curl_command)
