@@ -17,7 +17,8 @@ for request in request_sequence:
 body_start = replay_request.find('{')
 body = replay_request[body_start:]
 
-print(body)
+body = ""
+#print(body)
 # Construct the curl command
 curl_command = f"curl -X PUT http://nrf:8000/nf-instances/D0at>\x0bVA1CM -H \"Accept: application/json\" -H \"Content-Type: application/json\" -d '{body}'"
 os.system(curl_command)
