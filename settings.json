@@ -1,3 +1,3 @@
 {
-        "custom_value_generators": "/RESTler/json/RESTLER_modified/restler-fuzzer/restler/generator.py"
+        "custom_value_generators": "/RESTler/modified_restler/5g-Microservice-testing/generator.py"
 }
