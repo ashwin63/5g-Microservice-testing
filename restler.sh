@@ -3,30 +3,29 @@
 # first argument filename 
 # -r => uses radamsa
 # -i => reinstalls restler
-filename="swagger.json"
+FILENAME="nrf_management.json"
+RESTLER_DIR="/RESTler/modified_restler"
+RESTLER_BIN_DIR="${RESTLER_DIR}/restler_bin"
+API_FILE_PATH="${RESTLER_DIR}/5g-Microservice-testing/apis/${FILENAME}"
+SETTINGS_FILE_PATH="${RESTLER_DIR}/5g-Microservice-testing/settings.json"
 radamsa=false
 
-# Check for command line arguments and assign to filename if present
-if [ $# -gt 0 ]; then
-    filename="$1"
-    echo "Filename: $filename"
-fi
-
 # Check for -r flag
-if [ "$2" == '-r' ]; then
+if [ "$1" == '-r' ]; then
     radamsa=true
     echo "Radamsa: $radamsa"
 fi
-if [ "$3" == '-i' ]; then
+if [ "$2" == '-i' ]; then
     apk add dotnet6-sdk
-    mkdir RESTLER_modified
-    cd RESTLER_modified
+    mkdir $RESTLER_DIR
+    cd $RESTLER_DIR
     git clone https://github.com/ashwin63/restler-fuzzer.git
+    git clone https://github.com/ashwin63/5g-Microservice-testing.git
     cd restler-fuzzer
     git pull
     cd ..
-    mkdir restler_bin
-    python ./restler-fuzzer/build-restler.py --dest_dir /RESTler/json/RESTLER_modified/restler_bin
+    mkdir $RESTLER_BIN_DIR
+    python ./restler-fuzzer/build-restler.py --dest_dir $RESTLER_BIN_DIR
 fi
 #install radamsa
 if $radamsa
@@ -36,36 +35,36 @@ then
     apk add wget
     apk add clang
     git clone https://gitlab.com/akihe/radamsa.git
-    cd /RESTler/json/radamsa
+    cd $RESTLER_DIR/radamsa
     make
     make install
 fi
-cd /RESTler/json/RESTLER_modified/
+cd $RESTLER_DIR
 # Execute the restler/Restler test command
-echo "Restler Compile started" >> /RESTler/json/RESTLER_modified/restler_log
-/RESTler/json/RESTLER_modified/restler_bin/restler/Restler compile --api_spec /RESTler/json/"$filename" 
+echo "Restler Compile started" >> $RESTLER_DIR/restler_log
+$RESTLER_BIN_DIR/restler/Restler compile --api_spec $API_FILE_PATH 
 if $radamsa 
 then 
-    /RESTler/json/RESTLER_modified/restler_bin/restler/Restler test --grammar_file /RESTler/json/RESTLER_modified/Compile/grammar.py --dictionary_file  /RESTler/json/RESTLER_modified/Compile/dict.json --settings  /RESTler/json/settings.json --no_ssl
+    $RESTLER_BIN_DIR/restler/Restler test --grammar_file $RESTLER_DIR/Compile/grammar.py --dictionary_file  $RESTLER_DIR/Compile/dict.json --settings  $SETTINGS_FILE_PATH --no_ssl
 else
-    /RESTler/json/RESTLER_modified/restler_bin/restler/Restler test --grammar_file  /RESTler/json/RESTLER_modified/Compile/grammar.py --dictionary_file  /RESTler/json/RESTLER_modified/Compile/dict.json --no_ssl
+    $RESTLER_BIN_DIR/restler/Restler test --grammar_file  $RESTLER_DIR/Compile/grammar.py --dictionary_file  $RESTLER_DIR/Compile/dict.json --no_ssl
 fi
 #echo "Restler Test Passed" >> /RESTler/restler_log
 # Check if the command was successful
 
 if [ $? -eq 0 ]; then
     # If successful, execute the restler/Restler fuzz command
-    echo "Restler Fuzz started" >> /RESTler/json/restler_log
+    echo "Restler Fuzz started" >> $RESTLER_DIR/restler_log
     if $radamsa 
     then
         echo "using radamsa"
-         /RESTler/json/RESTLER_modified/restler_bin/restler/Restler  fuzz --grammar_file  /RESTler/json/RESTLER_modified/Compile/grammar.py --dictionary_file   /RESTler/json/RESTLER_modified/Compile/dict.json --settings /RESTler/json/settings.json --no_ssl
+         $RESTLER_BIN_DIR/restler/Restler  fuzz --grammar_file  $RESTLER_DIR/Compile/grammar.py --dictionary_file   $RESTLER_DIR/Compile/dict.json --settings $SETTINGS_FILE_PATH --no_ssl
     else
         echo " Starting fuzzing with default dictionary"
-         /RESTler/json/RESTLER_modified/restler_bin/restler/Restler  fuzz --grammar_file  /RESTler/json/RESTLER_modified/Compile/grammar.py --dictionary_file  /RESTler/json/RESTLER_modified/dict.json --no_ssl
+         $RESTLER_BIN_DIR/restler/Restler  fuzz --grammar_file  $RESTLER_DIR/Compile/grammar.py --dictionary_file  $RESTLER_DIR/dict.json --no_ssl
     fi
-    echo "Restler Fuzz Finished" >> /RESTler/json/restler_log
+    echo "Restler Fuzz Finished" >> $RESTLER_DIR/restler_log
 else
     # If the test command failed, enter an infinite loop
-    echo "Restler Test failed" >> /RESTler/json/restler_log
+    echo "Restler Test failed" >> $RESTLER_DIR/restler_log
 fi
