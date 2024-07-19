@@ -61,7 +61,7 @@ if [ $? -eq 0 ]; then
          $RESTLER_BIN_DIR/restler/Restler  fuzz --grammar_file  $RESTLER_DIR/Compile/grammar.py --dictionary_file   $RESTLER_DIR/Compile/dict.json --settings $SETTINGS_FILE_PATH --no_ssl
     else
         echo " Starting fuzzing with default dictionary"
-         $RESTLER_BIN_DIR/restler/Restler  fuzz --grammar_file  $RESTLER_DIR/Compile/grammar.py --dictionary_file  $RESTLER_DIR/dict.json --no_ssl
+         $RESTLER_BIN_DIR/restler/Restler  fuzz --grammar_file  $RESTLER_DIR/Compile/grammar.py --dictionary_file  $RESTLER_DIR/Compile/dict.json --no_ssl
     fi
     echo "Restler Fuzz Finished" >> $RESTLER_DIR/restler_log
 else
