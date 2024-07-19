@@ -17,6 +17,8 @@ if [ "$1" == '-r' ]; then
 fi
 if [ "$2" == '-i' ]; then
     apk add dotnet6-sdk
+    apk add git
+    apk add nano
     mkdir $RESTLER_DIR
     cd $RESTLER_DIR
     git clone https://github.com/ashwin63/restler-fuzzer.git
