@@ -1,0 +1,1972 @@
+{
+  "nfInstanceId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "nfInstanceName": "string",
+  "nfType": "NRF",
+  "nfStatus": "REGISTERED",
+  "collocatedNfInstances": [
+    {
+      "nfInstanceId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "nfType": "UPF"
+    }
+  ],
+  "heartBeatTimer": 1,
+  "plmnList": [
+    {
+      "mcc": "string",
+      "mnc": "string"
+    }
+  ],
+  "snpnList": [
+    {
+      "mcc": "string",
+      "mnc": "string",
+      "nid": "string"
+    }
+  ],
+  "sNssais": [
+    {
+      "sst": 255,
+      "sd": "string",
+      "sdRanges": [
+        {
+          "start": "string",
+          "end": "string"
+        }
+      ],
+      "wildcardSd": true
+    }
+  ],
+  "perPlmnSnssaiList": [
+    {
+      "plmnId": {
+        "mcc": "string",
+        "mnc": "string"
+      },
+      "sNssaiList": [
+        {
+          "sst": 255,
+          "sd": "string",
+          "sdRanges": [
+            {
+              "start": "string",
+              "end": "string"
+            }
+          ],
+          "wildcardSd": true
+        }
+      ],
+      "nid": "string"
+    }
+  ],
+  "nsiList": [
+    "string"
+  ],
+  "fqdn": "string",
+  "interPlmnFqdn": "string",
+  "ipv4Addresses": [
+    "198.51.100.1"
+  ],
+  "ipv6Addresses": [
+    "2001:db8:85a3::8a2e:370:7334"
+  ],
+  "allowedPlmns": [
+    {
+      "mcc": "string",
+      "mnc": "string"
+    }
+  ],
+  "allowedSnpns": [
+    {
+      "mcc": "string",
+      "mnc": "string",
+      "nid": "string"
+    }
+  ],
+  "allowedNfTypes": [
+    "NRF",
+    "string"
+  ],
+  "allowedNfDomains": [
+    "string"
+  ],
+  "allowedNssais": [
+    {
+      "sst": 255,
+      "sd": "string",
+      "sdRanges": [
+        {
+          "start": "string",
+          "end": "string"
+        }
+      ],
+      "wildcardSd": true
+    }
+  ],
+  "allowedRuleSet": {},
+  "priority": 65535,
+  "capacity": 65535,
+  "load": 100,
+  "loadTimeStamp": "2024-07-27T17:08:00.121Z",
+  "locality": "string",
+  "extLocality": {},
+  "udrInfo": {
+    "groupId": "string",
+    "supiRanges": [
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      },
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      }
+    ],
+    "gpsiRanges": [
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      },
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      }
+    ],
+    "externalGroupIdentifiersRanges": [
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      },
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      }
+    ],
+    "supportedDataSets": [
+      "SUBSCRIPTION",
+      "string"
+    ],
+    "sharedDataIdRanges": [
+      {
+        "pattern": "string"
+      }
+    ]
+  },
+  "udrInfoList": {},
+  "udmInfo": {
+    "groupId": "string",
+    "supiRanges": [
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      },
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      }
+    ],
+    "gpsiRanges": [
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      },
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      }
+    ],
+    "externalGroupIdentifiersRanges": [
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      },
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      }
+    ],
+    "routingIndicators": [
+      "string"
+    ],
+    "internalGroupIdentifiersRanges": [
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      },
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      }
+    ],
+    "suciInfos": [
+      {
+        "routingInds": [
+          "string"
+        ],
+        "hNwPubKeyIds": [
+          0
+        ]
+      }
+    ]
+  },
+  "udmInfoList": {},
+  "ausfInfo": {
+    "groupId": "string",
+    "supiRanges": [
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      },
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      }
+    ],
+    "routingIndicators": [
+      "string"
+    ],
+    "suciInfos": [
+      {
+        "routingInds": [
+          "string"
+        ],
+        "hNwPubKeyIds": [
+          0
+        ]
+      }
+    ]
+  },
+  "ausfInfoList": {},
+  "amfInfo": {
+    "amfSetId": "string",
+    "amfRegionId": "string",
+    "guamiList": [
+      {
+        "plmnId": {
+          "mcc": "string",
+          "mnc": "string",
+          "nid": "string"
+        },
+        "amfId": "string"
+      }
+    ],
+    "taiList": [
+      {
+        "plmnId": {
+          "mcc": "string",
+          "mnc": "string"
+        },
+        "tac": "string",
+        "nid": "string"
+      }
+    ],
+    "taiRangeList": [
+      {
+        "plmnId": {
+          "mcc": "string",
+          "mnc": "string"
+        },
+        "tacRangeList": [
+          {
+            "start": "string",
+            "end": "string",
+            "pattern": "string"
+          },
+          {
+            "start": "string",
+            "end": "string",
+            "pattern": "string"
+          }
+        ],
+        "nid": "string"
+      }
+    ],
+    "backupInfoAmfFailure": [
+      {
+        "plmnId": {
+          "mcc": "string",
+          "mnc": "string",
+          "nid": "string"
+        },
+        "amfId": "string"
+      }
+    ],
+    "backupInfoAmfRemoval": [
+      {
+        "plmnId": {
+          "mcc": "string",
+          "mnc": "string",
+          "nid": "string"
+        },
+        "amfId": "string"
+      }
+    ],
+    "n2InterfaceAmfInfo": {
+      "ipv4EndpointAddress": [
+        "198.51.100.1"
+      ],
+      "ipv6EndpointAddress": [
+        "2001:db8:85a3::8a2e:370:7334"
+      ],
+      "amfName": "string"
+    },
+    "amfOnboardingCapability": false,
+    "highLatencyCom": true
+  },
+  "amfInfoList": {},
+  "smfInfo": {
+    "sNssaiSmfInfoList": [
+      {
+        "sNssai": {
+          "sst": 255,
+          "sd": "string",
+          "sdRanges": [
+            {
+              "start": "string",
+              "end": "string"
+            }
+          ],
+          "wildcardSd": true
+        },
+        "dnnSmfInfoList": [
+          {
+            "dnn": "string",
+            "dnaiList": [
+              "string",
+              "string"
+            ],
+            "uePlmnRangeList": [
+              {
+                "start": "string",
+                "end": "string",
+                "pattern": "string"
+              },
+              {
+                "start": "string",
+                "end": "string",
+                "pattern": "string"
+              }
+            ]
+          }
+        ],
+        "dnnSmfInfoListId": 0
+      },
+      {
+        "sNssai": {
+          "sst": 255,
+          "sd": "string",
+          "sdRanges": [
+            {
+              "start": "string",
+              "end": "string"
+            }
+          ],
+          "wildcardSd": true
+        },
+        "dnnSmfInfoList": [
+          {
+            "dnn": "string",
+            "dnaiList": [
+              "string",
+              "string"
+            ],
+            "uePlmnRangeList": [
+              {
+                "start": "string",
+                "end": "string",
+                "pattern": "string"
+              },
+              {
+                "start": "string",
+                "end": "string",
+                "pattern": "string"
+              }
+            ]
+          }
+        ],
+        "dnnSmfInfoListId": 0
+      }
+    ],
+    "taiList": [
+      {
+        "plmnId": {
+          "mcc": "string",
+          "mnc": "string"
+        },
+        "tac": "string",
+        "nid": "string"
+      }
+    ],
+    "taiRangeList": [
+      {
+        "plmnId": {
+          "mcc": "string",
+          "mnc": "string"
+        },
+        "tacRangeList": [
+          {
+            "start": "string",
+            "end": "string",
+            "pattern": "string"
+          },
+          {
+            "start": "string",
+            "end": "string",
+            "pattern": "string"
+          }
+        ],
+        "nid": "string"
+      }
+    ],
+    "pgwFqdn": "string",
+    "pgwIpAddrList": [
+      {
+        "ipv4Addr": "198.51.100.1",
+        "ipv6Addr": "2001:db8:85a3::8a2e:370:7334",
+        "ipv6Prefix": "2001:db8:abcd:12::0/64"
+      },
+      {
+        "ipv4Addr": "198.51.100.1",
+        "ipv6Addr": "2001:db8:85a3::8a2e:370:7334",
+        "ipv6Prefix": "2001:db8:abcd:12::0/64"
+      },
+      {
+        "ipv4Addr": "198.51.100.1",
+        "ipv6Addr": "2001:db8:85a3::8a2e:370:7334",
+        "ipv6Prefix": "2001:db8:abcd:12::0/64"
+      }
+    ],
+    "accessType": [
+      "3GPP_ACCESS"
+    ],
+    "priority": 65535,
+    "vsmfSupportInd": true,
+    "pgwFqdnList": [
+      "string"
+    ],
+    "ismfSupportInd": true,
+    "smfUPRPCapability": false
+  },
+  "smfInfoList": {},
+  "upfInfo": {
+    "sNssaiUpfInfoList": [
+      {
+        "sNssai": {
+          "sst": 255,
+          "sd": "string",
+          "sdRanges": [
+            {
+              "start": "string",
+              "end": "string"
+            }
+          ],
+          "wildcardSd": true
+        },
+        "dnnUpfInfoList": [
+          {
+            "dnn": "string",
+            "dnaiList": [
+              "string"
+            ],
+            "pduSessionTypes": [
+              "IPV4",
+              "string"
+            ],
+            "ipv4AddressRanges": [
+              {
+                "start": "198.51.100.1",
+                "end": "198.51.100.1"
+              }
+            ],
+            "ipv6PrefixRanges": [
+              {
+                "start": "2001:db8:abcd:12::0/64",
+                "end": "2001:db8:abcd:12::0/64"
+              }
+            ],
+            "natedIpv4AddressRanges": [
+              {
+                "start": "198.51.100.1",
+                "end": "198.51.100.1"
+              }
+            ],
+            "natedIpv6PrefixRanges": [
+              {
+                "start": "2001:db8:abcd:12::0/64",
+                "end": "2001:db8:abcd:12::0/64"
+              }
+            ],
+            "ipv4IndexList": [
+              0,
+              "string"
+            ],
+            "ipv6IndexList": [
+              0,
+              "string"
+            ],
+            "networkInstance": "string",
+            "dnaiNwInstanceList": {},
+            "interfaceUpfInfoList": [
+              {
+                "interfaceType": "N3",
+                "ipv4EndpointAddresses": [
+                  "198.51.100.1"
+                ],
+                "ipv6EndpointAddresses": [
+                  "2001:db8:85a3::8a2e:370:7334"
+                ],
+                "endpointFqdn": "string",
+                "networkInstance": "string"
+              },
+              {
+                "interfaceType": "N3",
+                "ipv4EndpointAddresses": [
+                  "198.51.100.1"
+                ],
+                "ipv6EndpointAddresses": [
+                  "2001:db8:85a3::8a2e:370:7334"
+                ],
+                "endpointFqdn": "string",
+                "networkInstance": "string"
+              },
+              {
+                "interfaceType": "N3",
+                "ipv4EndpointAddresses": [
+                  "198.51.100.1"
+                ],
+                "ipv6EndpointAddresses": [
+                  "2001:db8:85a3::8a2e:370:7334"
+                ],
+                "endpointFqdn": "string",
+                "networkInstance": "string"
+              }
+            ]
+          }
+        ],
+        "redundantTransport": false,
+        "interfaceUpfInfoList": [
+          {
+            "interfaceType": "N3",
+            "ipv4EndpointAddresses": [
+              "198.51.100.1"
+            ],
+            "ipv6EndpointAddresses": [
+              "2001:db8:85a3::8a2e:370:7334"
+            ],
+            "endpointFqdn": "string",
+            "networkInstance": "string"
+          },
+          {
+            "interfaceType": "N3",
+            "ipv4EndpointAddresses": [
+              "198.51.100.1"
+            ],
+            "ipv6EndpointAddresses": [
+              "2001:db8:85a3::8a2e:370:7334"
+            ],
+            "endpointFqdn": "string",
+            "networkInstance": "string"
+          },
+          {
+            "interfaceType": "N3",
+            "ipv4EndpointAddresses": [
+              "198.51.100.1"
+            ],
+            "ipv6EndpointAddresses": [
+              "2001:db8:85a3::8a2e:370:7334"
+            ],
+            "endpointFqdn": "string",
+            "networkInstance": "string"
+          }
+        ],
+        "dnnUpfInfoListId": 0
+      },
+      {
+        "sNssai": {
+          "sst": 255,
+          "sd": "string",
+          "sdRanges": [
+            {
+              "start": "string",
+              "end": "string"
+            }
+          ],
+          "wildcardSd": true
+        },
+        "dnnUpfInfoList": [
+          {
+            "dnn": "string",
+            "dnaiList": [
+              "string"
+            ],
+            "pduSessionTypes": [
+              "IPV4",
+              "string"
+            ],
+            "ipv4AddressRanges": [
+              {
+                "start": "198.51.100.1",
+                "end": "198.51.100.1"
+              }
+            ],
+            "ipv6PrefixRanges": [
+              {
+                "start": "2001:db8:abcd:12::0/64",
+                "end": "2001:db8:abcd:12::0/64"
+              }
+            ],
+            "natedIpv4AddressRanges": [
+              {
+                "start": "198.51.100.1",
+                "end": "198.51.100.1"
+              }
+            ],
+            "natedIpv6PrefixRanges": [
+              {
+                "start": "2001:db8:abcd:12::0/64",
+                "end": "2001:db8:abcd:12::0/64"
+              }
+            ],
+            "ipv4IndexList": [
+              0,
+              "string"
+            ],
+            "ipv6IndexList": [
+              0,
+              "string"
+            ],
+            "networkInstance": "string",
+            "dnaiNwInstanceList": {},
+            "interfaceUpfInfoList": [
+              {
+                "interfaceType": "N3",
+                "ipv4EndpointAddresses": [
+                  "198.51.100.1"
+                ],
+                "ipv6EndpointAddresses": [
+                  "2001:db8:85a3::8a2e:370:7334"
+                ],
+                "endpointFqdn": "string",
+                "networkInstance": "string"
+              },
+              {
+                "interfaceType": "N3",
+                "ipv4EndpointAddresses": [
+                  "198.51.100.1"
+                ],
+                "ipv6EndpointAddresses": [
+                  "2001:db8:85a3::8a2e:370:7334"
+                ],
+                "endpointFqdn": "string",
+                "networkInstance": "string"
+              },
+              {
+                "interfaceType": "N3",
+                "ipv4EndpointAddresses": [
+                  "198.51.100.1"
+                ],
+                "ipv6EndpointAddresses": [
+                  "2001:db8:85a3::8a2e:370:7334"
+                ],
+                "endpointFqdn": "string",
+                "networkInstance": "string"
+              }
+            ]
+          }
+        ],
+        "redundantTransport": false,
+        "interfaceUpfInfoList": [
+          {
+            "interfaceType": "N3",
+            "ipv4EndpointAddresses": [
+              "198.51.100.1"
+            ],
+            "ipv6EndpointAddresses": [
+              "2001:db8:85a3::8a2e:370:7334"
+            ],
+            "endpointFqdn": "string",
+            "networkInstance": "string"
+          },
+          {
+            "interfaceType": "N3",
+            "ipv4EndpointAddresses": [
+              "198.51.100.1"
+            ],
+            "ipv6EndpointAddresses": [
+              "2001:db8:85a3::8a2e:370:7334"
+            ],
+            "endpointFqdn": "string",
+            "networkInstance": "string"
+          },
+          {
+            "interfaceType": "N3",
+            "ipv4EndpointAddresses": [
+              "198.51.100.1"
+            ],
+            "ipv6EndpointAddresses": [
+              "2001:db8:85a3::8a2e:370:7334"
+            ],
+            "endpointFqdn": "string",
+            "networkInstance": "string"
+          }
+        ],
+        "dnnUpfInfoListId": 0
+      }
+    ],
+    "smfServingArea": [
+      "string"
+    ],
+    "interfaceUpfInfoList": [
+      {
+        "interfaceType": "N3",
+        "ipv4EndpointAddresses": [
+          "198.51.100.1"
+        ],
+        "ipv6EndpointAddresses": [
+          "2001:db8:85a3::8a2e:370:7334"
+        ],
+        "endpointFqdn": "string",
+        "networkInstance": "string"
+      },
+      {
+        "interfaceType": "N3",
+        "ipv4EndpointAddresses": [
+          "198.51.100.1"
+        ],
+        "ipv6EndpointAddresses": [
+          "2001:db8:85a3::8a2e:370:7334"
+        ],
+        "endpointFqdn": "string",
+        "networkInstance": "string"
+      },
+      {
+        "interfaceType": "N3",
+        "ipv4EndpointAddresses": [
+          "198.51.100.1"
+        ],
+        "ipv6EndpointAddresses": [
+          "2001:db8:85a3::8a2e:370:7334"
+        ],
+        "endpointFqdn": "string",
+        "networkInstance": "string"
+      }
+    ],
+    "iwkEpsInd": false,
+    "sxaInd": true,
+    "pduSessionTypes": [
+      "IPV4",
+      "string"
+    ],
+    "atsssCapability": {
+      "atsssLL": false,
+      "mptcp": false,
+      "mpquic": false,
+      "rttWithoutPmf": false
+    },
+    "ueIpAddrInd": false,
+    "taiList": [
+      {
+        "plmnId": {
+          "mcc": "string",
+          "mnc": "string"
+        },
+        "tac": "string",
+        "nid": "string"
+      }
+    ],
+    "taiRangeList": [
+      {
+        "plmnId": {
+          "mcc": "string",
+          "mnc": "string"
+        },
+        "tacRangeList": [
+          {
+            "start": "string",
+            "end": "string",
+            "pattern": "string"
+          },
+          {
+            "start": "string",
+            "end": "string",
+            "pattern": "string"
+          }
+        ],
+        "nid": "string"
+      }
+    ],
+    "wAgfInfo": {
+      "ipv4EndpointAddresses": [
+        "198.51.100.1"
+      ],
+      "ipv6EndpointAddresses": [
+        "2001:db8:85a3::8a2e:370:7334"
+      ],
+      "endpointFqdn": "string"
+    },
+    "tngfInfo": {
+      "ipv4EndpointAddresses": [
+        "198.51.100.1"
+      ],
+      "ipv6EndpointAddresses": [
+        "2001:db8:85a3::8a2e:370:7334"
+      ],
+      "endpointFqdn": "string"
+    },
+    "twifInfo": {
+      "ipv4EndpointAddresses": [
+        "198.51.100.1"
+      ],
+      "ipv6EndpointAddresses": [
+        "2001:db8:85a3::8a2e:370:7334"
+      ],
+      "endpointFqdn": "string"
+    },
+    "preferredEpdgInfoList": [
+      {
+        "ipv4EndpointAddresses": [
+          "198.51.100.1"
+        ],
+        "ipv6EndpointAddresses": [
+          "2001:db8:85a3::8a2e:370:7334"
+        ]
+      },
+      {
+        "ipv4EndpointAddresses": [
+          "198.51.100.1"
+        ],
+        "ipv6EndpointAddresses": [
+          "2001:db8:85a3::8a2e:370:7334"
+        ]
+      }
+    ],
+    "preferredWAgfInfoList": [
+      {
+        "ipv4EndpointAddresses": [
+          "198.51.100.1"
+        ],
+        "ipv6EndpointAddresses": [
+          "2001:db8:85a3::8a2e:370:7334"
+        ],
+        "endpointFqdn": "string"
+      },
+      {
+        "ipv4EndpointAddresses": [
+          "198.51.100.1"
+        ],
+        "ipv6EndpointAddresses": [
+          "2001:db8:85a3::8a2e:370:7334"
+        ],
+        "endpointFqdn": "string"
+      },
+      {
+        "ipv4EndpointAddresses": [
+          "198.51.100.1"
+        ],
+        "ipv6EndpointAddresses": [
+          "2001:db8:85a3::8a2e:370:7334"
+        ],
+        "endpointFqdn": "string"
+      }
+    ],
+    "preferredTngfInfoList": [
+      {
+        "ipv4EndpointAddresses": [
+          "198.51.100.1"
+        ],
+        "ipv6EndpointAddresses": [
+          "2001:db8:85a3::8a2e:370:7334"
+        ],
+        "endpointFqdn": "string"
+      },
+      {
+        "ipv4EndpointAddresses": [
+          "198.51.100.1"
+        ],
+        "ipv6EndpointAddresses": [
+          "2001:db8:85a3::8a2e:370:7334"
+        ],
+        "endpointFqdn": "string"
+      },
+      {
+        "ipv4EndpointAddresses": [
+          "198.51.100.1"
+        ],
+        "ipv6EndpointAddresses": [
+          "2001:db8:85a3::8a2e:370:7334"
+        ],
+        "endpointFqdn": "string"
+      }
+    ],
+    "preferredTwifInfoList": [
+      {
+        "ipv4EndpointAddresses": [
+          "198.51.100.1"
+        ],
+        "ipv6EndpointAddresses": [
+          "2001:db8:85a3::8a2e:370:7334"
+        ],
+        "endpointFqdn": "string"
+      },
+      {
+        "ipv4EndpointAddresses": [
+          "198.51.100.1"
+        ],
+        "ipv6EndpointAddresses": [
+          "2001:db8:85a3::8a2e:370:7334"
+        ],
+        "endpointFqdn": "string"
+      },
+      {
+        "ipv4EndpointAddresses": [
+          "198.51.100.1"
+        ],
+        "ipv6EndpointAddresses": [
+          "2001:db8:85a3::8a2e:370:7334"
+        ],
+        "endpointFqdn": "string"
+      }
+    ],
+    "priority": 65535,
+    "redundantGtpu": false,
+    "ipups": false,
+    "dataForwarding": false,
+    "supportedPfcpFeatures": "string",
+    "upfEvents": [
+      "QOS_MONITORING",
+      "string"
+    ]
+  },
+  "upfInfoList": {},
+  "pcfInfo": {
+    "groupId": "string",
+    "dnnList": [
+      "string"
+    ],
+    "supiRanges": [
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      },
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      }
+    ],
+    "gpsiRanges": [
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      },
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      }
+    ],
+    "rxDiamHost": "string",
+    "rxDiamRealm": "string",
+    "v2xSupportInd": false,
+    "proseSupportInd": false,
+    "proseCapability": {
+      "proseDirectDiscovey": false,
+      "proseDirectCommunication": false,
+      "proseL2UetoNetworkRelay": false,
+      "proseL3UetoNetworkRelay": false,
+      "proseL2RemoteUe": false,
+      "proseL3RemoteUe": false,
+      "proseL2UetoUeRelay": false,
+      "proseL3UetoUeRelay": false,
+      "proseL2EndUe": false,
+      "proseL3EndUe": false
+    },
+    "v2xCapability": {
+      "lteV2x": false,
+      "nrV2x": false
+    },
+    "a2xSupportInd": false,
+    "a2xCapability": {
+      "lteA2x": false,
+      "nrA2x": false
+    },
+    "rangingSlPosSupportInd": false,
+    "urspEpsSupport": false,
+    "vplmnRuleSupport": false,
+    "urspEnforceSupport": false
+  },
+  "pcfInfoList": {},
+  "bsfInfo": {
+    "dnnList": [
+      "string"
+    ],
+    "ipDomainList": [
+      "string"
+    ],
+    "ipv4AddressRanges": [
+      {
+        "start": "198.51.100.1",
+        "end": "198.51.100.1"
+      }
+    ],
+    "ipv6PrefixRanges": [
+      {
+        "start": "2001:db8:abcd:12::0/64",
+        "end": "2001:db8:abcd:12::0/64"
+      }
+    ],
+    "rxDiamHost": "string",
+    "rxDiamRealm": "string",
+    "groupId": "string",
+    "supiRanges": [
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      },
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      }
+    ],
+    "gpsiRanges": [
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      },
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      }
+    ]
+  },
+  "bsfInfoList": {},
+  "chfInfo": {
+    "supiRangeList": [
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      },
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      }
+    ],
+    "gpsiRangeList": [
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      },
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      }
+    ],
+    "plmnRangeList": [
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      },
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      }
+    ],
+    "groupId": "string",
+    "primaryChfInstance": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "secondaryChfInstance": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+  },
+  "chfInfoList": {},
+  "nefInfo": {
+    "nefId": "string",
+    "pfdData": {
+      "appIds": [
+        "string"
+      ],
+      "afIds": [
+        "string"
+      ]
+    },
+    "afEeData": {
+      "afEvents": [
+        "SVC_EXPERIENCE",
+        "string"
+      ],
+      "afIds": [
+        "string"
+      ],
+      "appIds": [
+        "string"
+      ],
+      "taiList": [
+        {
+          "plmnId": {
+            "mcc": "string",
+            "mnc": "string"
+          },
+          "tac": "string",
+          "nid": "string"
+        }
+      ],
+      "taiRangeList": [
+        {
+          "plmnId": {
+            "mcc": "string",
+            "mnc": "string"
+          },
+          "tacRangeList": [
+            {
+              "start": "string",
+              "end": "string",
+              "pattern": "string"
+            },
+            {
+              "start": "string",
+              "end": "string",
+              "pattern": "string"
+            }
+          ],
+          "nid": "string"
+        }
+      ]
+    },
+    "gpsiRanges": [
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      },
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      }
+    ],
+    "externalGroupIdentifiersRanges": [
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      },
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      }
+    ],
+    "servedFqdnList": [
+      "string"
+    ],
+    "taiList": [
+      {
+        "plmnId": {
+          "mcc": "string",
+          "mnc": "string"
+        },
+        "tac": "string",
+        "nid": "string"
+      }
+    ],
+    "taiRangeList": [
+      {
+        "plmnId": {
+          "mcc": "string",
+          "mnc": "string"
+        },
+        "tacRangeList": [
+          {
+            "start": "string",
+            "end": "string",
+            "pattern": "string"
+          },
+          {
+            "start": "string",
+            "end": "string",
+            "pattern": "string"
+          }
+        ],
+        "nid": "string"
+      }
+    ],
+    "dnaiList": [
+      "string"
+    ],
+    "unTrustAfInfoList": [
+      {
+        "afId": "string",
+        "sNssaiInfoList": [
+          {
+            "sNssai": {
+              "sst": 255,
+              "sd": "string",
+              "sdRanges": [
+                {
+                  "start": "string",
+                  "end": "string"
+                }
+              ],
+              "wildcardSd": true
+            },
+            "dnnInfoList": [
+              {
+                "dnn": "string"
+              }
+            ]
+          }
+        ],
+        "mappingInd": false
+      }
+    ],
+    "uasNfFunctionalityInd": false,
+    "multiMemAfSessQosInd": false,
+    "memberUESelAssistInd": false
+  },
+  "nrfInfo": {
+    "servedUdrInfo": {},
+    "servedUdrInfoList": {},
+    "servedUdmInfo": {},
+    "servedUdmInfoList": {},
+    "servedAusfInfo": {},
+    "servedAusfInfoList": {},
+    "servedAmfInfo": {},
+    "servedAmfInfoList": {},
+    "servedSmfInfo": {},
+    "servedSmfInfoList": {},
+    "servedUpfInfo": {},
+    "servedUpfInfoList": {},
+    "servedPcfInfo": {},
+    "servedPcfInfoList": {},
+    "servedBsfInfo": {},
+    "servedBsfInfoList": {},
+    "servedChfInfo": {},
+    "servedChfInfoList": {},
+    "servedNefInfo": {},
+    "servedNwdafInfo": {},
+    "servedNwdafInfoList": {},
+    "servedPcscfInfoList": {},
+    "servedGmlcInfo": {},
+    "servedLmfInfo": {},
+    "servedNfInfo": {},
+    "servedHssInfoList": {},
+    "servedUdsfInfo": {},
+    "servedUdsfInfoList": {},
+    "servedScpInfoList": {},
+    "servedSeppInfoList": {},
+    "servedAanfInfoList": {
+      "additionalProp1": {},
+      "additionalProp2": {},
+      "additionalProp3": {}
+    },
+    "served5gDdnmfInfo": {},
+    "servedMfafInfoList": {},
+    "servedEasdfInfoList": {
+      "additionalProp1": {},
+      "additionalProp2": {},
+      "additionalProp3": {}
+    },
+    "servedDccfInfoList": {},
+    "servedMbSmfInfoList": {},
+    "servedTsctsfInfoList": {},
+    "servedMbUpfInfoList": {},
+    "servedTrustAfInfo": {},
+    "servedNssaafInfo": {}
+  },
+  "udsfInfo": {
+    "groupId": "string",
+    "supiRanges": [
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      },
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      }
+    ],
+    "storageIdRanges": {}
+  },
+  "udsfInfoList": {},
+  "nwdafInfo": {
+    "eventIds": [
+      "LOAD_LEVEL_INFORMATION",
+      "string"
+    ],
+    "nwdafEvents": [
+      "SLICE_LOAD_LEVEL",
+      "string"
+    ],
+    "taiList": [
+      {
+        "plmnId": {
+          "mcc": "string",
+          "mnc": "string"
+        },
+        "tac": "string",
+        "nid": "string"
+      }
+    ],
+    "taiRangeList": [
+      {
+        "plmnId": {
+          "mcc": "string",
+          "mnc": "string"
+        },
+        "tacRangeList": [
+          {
+            "start": "string",
+            "end": "string",
+            "pattern": "string"
+          },
+          {
+            "start": "string",
+            "end": "string",
+            "pattern": "string"
+          }
+        ],
+        "nid": "string"
+      }
+    ],
+    "nwdafCapability": {
+      "analyticsAggregation": false,
+      "analyticsMetadataProvisioning": false,
+      "mlModelAccuracyChecking": false,
+      "analyticsAccuracyChecking": false,
+      "roamingExchange": false
+    },
+    "analyticsDelay": 0,
+    "servingNfSetIdList": [
+      "string"
+    ],
+    "servingNfTypeList": [
+      "NRF",
+      "string"
+    ],
+    "mlAnalyticsList": [
+      {
+        "mlAnalyticsIds": [
+          "SLICE_LOAD_LEVEL",
+          "string"
+        ],
+        "snssaiList": [
+          {
+            "sst": 255,
+            "sd": "string"
+          }
+        ],
+        "trackingAreaList": [
+          {
+            "plmnId": {
+              "mcc": "string",
+              "mnc": "string"
+            },
+            "tac": "string",
+            "nid": "string"
+          }
+        ],
+        "mlModelInterInfo": {
+          "vendorList": [
+            "string"
+          ]
+        },
+        "flCapabilityType": "FL_SERVER",
+        "flTimeInterval": 0,
+        "nfTypeList": [
+          "NRF",
+          "string"
+        ],
+        "nfSetIdList": [
+          "string"
+        ]
+      }
+    ]
+  },
+  "nwdafInfoList": {},
+  "pcscfInfoList": {},
+  "hssInfoList": {},
+  "customInfo": {},
+  "recoveryTime": "2024-07-27T17:08:00.137Z",
+  "nfServicePersistence": false,
+  "nfServiceList": {},
+  "nfProfileChangesSupportInd": false,
+  "nfProfilePartialUpdateChangesSupportInd": false,
+  "defaultNotificationSubscriptions": [
+    {
+      "notificationType": "N1_MESSAGES",
+      "callbackUri": "string",
+      "interPlmnCallbackUri": "string",
+      "n1MessageClass": "5GMM",
+      "n2InformationClass": "SM",
+      "versions": [
+        "string"
+      ],
+      "binding": "string",
+      "acceptedEncoding": "string",
+      "supportedFeatures": "string",
+      "serviceInfoList": {},
+      "callbackUriPrefix": "string"
+    }
+  ],
+  "lmfInfo": {
+    "servingClientTypes": [
+      "EMERGENCY_SERVICES",
+      "string"
+    ],
+    "lmfId": "string",
+    "servingAccessTypes": [
+      "3GPP_ACCESS"
+    ],
+    "servingAnNodeTypes": [
+      "GNB",
+      "string"
+    ],
+    "servingRatTypes": [
+      "NR",
+      "string"
+    ],
+    "taiList": [
+      {
+        "plmnId": {
+          "mcc": "string",
+          "mnc": "string"
+        },
+        "tac": "string",
+        "nid": "string"
+      }
+    ],
+    "taiRangeList": [
+      {
+        "plmnId": {
+          "mcc": "string",
+          "mnc": "string"
+        },
+        "tacRangeList": [
+          {
+            "start": "string",
+            "end": "string",
+            "pattern": "string"
+          },
+          {
+            "start": "string",
+            "end": "string",
+            "pattern": "string"
+          }
+        ],
+        "nid": "string"
+      }
+    ],
+    "supportedGADShapes": [
+      "POINT",
+      "string"
+    ],
+    "pruExistenceInfo": {
+      "taiList": [
+        {
+          "plmnId": {
+            "mcc": "string",
+            "mnc": "string"
+          },
+          "tac": "string",
+          "nid": "string"
+        }
+      ],
+      "taiRangeList": [
+        {
+          "plmnId": {
+            "mcc": "string",
+            "mnc": "string"
+          },
+          "tacRangeList": [
+            {
+              "start": "string",
+              "end": "string",
+              "pattern": "string"
+            },
+            {
+              "start": "string",
+              "end": "string",
+              "pattern": "string"
+            }
+          ],
+          "nid": "string"
+        }
+      ]
+    },
+    "pruSupportInd": false,
+    "rangingslposSupportInd": false,
+    "upPositioningInd": false
+  },
+  "gmlcInfo": {
+    "servingClientTypes": [
+      "EMERGENCY_SERVICES",
+      "string"
+    ],
+    "gmlcNumbers": [
+      "string"
+    ]
+  },
+  "nfSetIdList": [
+    "string"
+  ],
+  "servingScope": [
+    "string"
+  ],
+  "lcHSupportInd": false,
+  "olcHSupportInd": false,
+  "nfSetRecoveryTimeList": {},
+  "serviceSetRecoveryTimeList": {},
+  "scpDomains": [
+    "string"
+  ],
+  "scpInfo": {
+    "scpDomainInfoList": {},
+    "scpPrefix": "string",
+    "scpPorts": {},
+    "addressDomains": [
+      "string"
+    ],
+    "ipv4Addresses": [
+      "198.51.100.1"
+    ],
+    "ipv6Prefixes": [
+      "2001:db8:abcd:12::0/64"
+    ],
+    "ipv4AddrRanges": [
+      {
+        "start": "198.51.100.1",
+        "end": "198.51.100.1"
+      }
+    ],
+    "ipv6PrefixRanges": [
+      {
+        "start": "2001:db8:abcd:12::0/64",
+        "end": "2001:db8:abcd:12::0/64"
+      }
+    ],
+    "servedNfSetIdList": [
+      "string"
+    ],
+    "remotePlmnList": [
+      {
+        "mcc": "string",
+        "mnc": "string"
+      }
+    ],
+    "remoteSnpnList": [
+      {
+        "mcc": "string",
+        "mnc": "string",
+        "nid": "string"
+      }
+    ],
+    "ipReachability": "IPV4",
+    "scpCapabilities": [
+      "INDIRECT_COM_WITH_DELEG_DISC",
+      "string"
+    ]
+  },
+  "seppInfo": {
+    "seppPrefix": "string",
+    "seppPorts": {},
+    "remotePlmnList": [
+      {
+        "mcc": "string",
+        "mnc": "string"
+      }
+    ],
+    "remoteSnpnList": [
+      {
+        "mcc": "string",
+        "mnc": "string",
+        "nid": "string"
+      }
+    ],
+    "n32Purposes": [
+      "ROAMING",
+      "string"
+    ]
+  },
+  "vendorId": "string",
+  "supportedVendorSpecificFeatures": {},
+  "aanfInfoList": {},
+  "5gDdnmfInfo": {
+    "plmnId": {
+      "mcc": "string",
+      "mnc": "string"
+    }
+  },
+  "mfafInfo": {
+    "servingNfTypeList": [
+      "NRF",
+      "string"
+    ],
+    "servingNfSetIdList": [
+      "string"
+    ],
+    "taiList": [
+      {
+        "plmnId": {
+          "mcc": "string",
+          "mnc": "string"
+        },
+        "tac": "string",
+        "nid": "string"
+      }
+    ],
+    "taiRangeList": [
+      {
+        "plmnId": {
+          "mcc": "string",
+          "mnc": "string"
+        },
+        "tacRangeList": [
+          {
+            "start": "string",
+            "end": "string",
+            "pattern": "string"
+          },
+          {
+            "start": "string",
+            "end": "string",
+            "pattern": "string"
+          }
+        ],
+        "nid": "string"
+      }
+    ]
+  },
+  "easdfInfoList": {},
+  "dccfInfo": {
+    "servingNfTypeList": [
+      "NRF",
+      "string"
+    ],
+    "servingNfSetIdList": [
+      "string"
+    ],
+    "taiList": [
+      {
+        "plmnId": {
+          "mcc": "string",
+          "mnc": "string"
+        },
+        "tac": "string",
+        "nid": "string"
+      }
+    ],
+    "taiRangeList": [
+      {
+        "plmnId": {
+          "mcc": "string",
+          "mnc": "string"
+        },
+        "tacRangeList": [
+          {
+            "start": "string",
+            "end": "string",
+            "pattern": "string"
+          },
+          {
+            "start": "string",
+            "end": "string",
+            "pattern": "string"
+          }
+        ],
+        "nid": "string"
+      }
+    ],
+    "dataSubsRelocInd": false
+  },
+  "nsacfInfoList": {},
+  "mbSmfInfoList": {},
+  "tsctsfInfoList": {},
+  "mbUpfInfoList": {},
+  "trustAfInfo": {
+    "sNssaiInfoList": [
+      {
+        "sNssai": {
+          "sst": 255,
+          "sd": "string",
+          "sdRanges": [
+            {
+              "start": "string",
+              "end": "string"
+            }
+          ],
+          "wildcardSd": true
+        },
+        "dnnInfoList": [
+          {
+            "dnn": "string"
+          }
+        ]
+      }
+    ],
+    "afEvents": [
+      "SVC_EXPERIENCE",
+      "string"
+    ],
+    "appIds": [
+      "string"
+    ],
+    "internalGroupId": [
+      "string"
+    ],
+    "mappingInd": false,
+    "taiList": [
+      {
+        "plmnId": {
+          "mcc": "string",
+          "mnc": "string"
+        },
+        "tac": "string",
+        "nid": "string"
+      }
+    ],
+    "taiRangeList": [
+      {
+        "plmnId": {
+          "mcc": "string",
+          "mnc": "string"
+        },
+        "tacRangeList": [
+          {
+            "start": "string",
+            "end": "string",
+            "pattern": "string"
+          },
+          {
+            "start": "string",
+            "end": "string",
+            "pattern": "string"
+          }
+        ],
+        "nid": "string"
+      }
+    ]
+  },
+  "nssaafInfo": {
+    "supiRanges": [
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      },
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      }
+    ],
+    "internalGroupIdentifiersRanges": [
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      },
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      }
+    ]
+  },
+  "hniList": [
+    "string"
+  ],
+  "iwmscInfo": {
+    "msisdnRanges": [
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      },
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      }
+    ],
+    "supiRanges": [
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      },
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      }
+    ],
+    "taiRangeList": [
+      {
+        "plmnId": {
+          "mcc": "string",
+          "mnc": "string"
+        },
+        "tacRangeList": [
+          {
+            "start": "string",
+            "end": "string",
+            "pattern": "string"
+          },
+          {
+            "start": "string",
+            "end": "string",
+            "pattern": "string"
+          }
+        ],
+        "nid": "string"
+      }
+    ],
+    "scNumber": "string"
+  },
+  "mnpfInfo": {
+    "msisdnRanges": [
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      },
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      }
+    ]
+  },
+  "smsfInfo": {
+    "roamingUeInd": true,
+    "remotePlmnRangeList": [
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      },
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      }
+    ]
+  },
+  "dcsfInfoList": {},
+  "mrfInfoList": {},
+  "mrfpInfoList": {},
+  "mfInfoList": {},
+  "adrfInfoList": {},
+  "selectionConditions": {
+    "consumerNfTypes": [
+      "NRF",
+      "string"
+    ],
+    "serviceFeature": 1,
+    "vsServiceFeature": 1,
+    "supiRangeList": [
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      },
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      }
+    ],
+    "gpsiRangeList": [
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      },
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      }
+    ],
+    "impuRangeList": [
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      },
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      }
+    ],
+    "impiRangeList": [
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      },
+      {
+        "start": "string",
+        "end": "string",
+        "pattern": "string"
+      }
+    ],
+    "peiList": [
+      "string"
+    ],
+    "taiRangeList": [
+      {
+        "plmnId": {
+          "mcc": "string",
+          "mnc": "string"
+        },
+        "tacRangeList": [
+          {
+            "start": "string",
+            "end": "string",
+            "pattern": "string"
+          },
+          {
+            "start": "string",
+            "end": "string",
+            "pattern": "string"
+          }
+        ],
+        "nid": "string"
+      }
+    ],
+    "dnnList": [
+      "string"
+    ]
+  },
+  "canaryRelease": false,
+  "exclusiveCanaryReleaseSelection": false,
+  "sharedProfileDataId": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+}

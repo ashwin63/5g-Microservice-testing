@@ -5,6 +5,11 @@ file_path = './InvalidValueChecker_connection_closed_1.json'
 with open(file_path, 'r') as file:
     data = json.load(file)
 
+file_path = "./data.json"
+with open(file_path,"r") as file:
+    data2 = json.load(file)
+
+
 # Extract the body from the request_sequence
 request_sequence = data['request_sequence']
 for request in request_sequence:
@@ -15,12 +20,12 @@ for request in request_sequence:
 # Find the start of the body
 #print(replay_request)
 body_start = replay_request.find('{')
-body = replay_request[body_start:]
+#body = replay_request[body_start:]
 
 body = ""
-hostname = "10.100.200.2"
+hostname = "10.100.200.4"
 #print(body)
 # Construct the curl command
-curl_command = f"curl -X PUT http://"+hostname+":8000/nf-instances/D0at>\x0bVA1CM -H \"Accept: application/json\" -H \"Content-Type: application/json\" -d '{body}'"
-os.system(curl_command)
+curl_command = f"curl -X PUT http://"+hostname+":8000/nf-instances/nfinstance36d784a9fd -H \"Accept: application/json\" -H \"Content-Type: application/json\" -d "+str(data2)
 #print(curl_command)
+os.system(curl_command)
