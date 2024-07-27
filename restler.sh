@@ -20,7 +20,9 @@ while [[ "$#" -gt 0 ]]; do
     esac
     shift
 done
-
+echo "Radamsa: $radamsa"
+echo "Reinstall RESTler: $reinstall"
+echo "Using API file: $FILENAME"
 # Check for -r flag
 if $radamsa; then
     radamsa=true
