@@ -10,12 +10,23 @@ API_FILE_PATH="${RESTLER_DIR}/5g-Microservice-testing/apis/${FILENAME}"
 SETTINGS_FILE_PATH="${RESTLER_DIR}/5g-Microservice-testing/settings.json"
 radamsa=false
 
+# Check for flags and optional filename argument
+while [[ "$#" -gt 0 ]]; do
+    case $1 in
+        -r) radamsa=true ;;
+        -i) reinstall=true ;;
+        --filename) FILENAME="$2"; shift ;;
+        *) echo "Unknown parameter passed: $1"; exit 1 ;;
+    esac
+    shift
+done
+
 # Check for -r flag
-if [ "$1" == '-r' ]; then
+if $radamsa; then
     radamsa=true
     echo "Radamsa: $radamsa"
 fi
-if [ "$2" == '-i' ]; then
+if $reinstall; then
     apk add dotnet6-sdk
     apk add git
     apk add nano
