@@ -6,7 +6,7 @@
 FILENAME="nrf_management.json"
 RESTLER_DIR="/RESTler/modified_restler"
 RESTLER_BIN_DIR="${RESTLER_DIR}/restler_bin"
-API_FILE_PATH="${RESTLER_DIR}/5g-Microservice-testing/apis/${FILENAME}"
+
 SETTINGS_FILE_PATH="${RESTLER_DIR}/5g-Microservice-testing/settings.json"
 radamsa=false
 
@@ -20,6 +20,7 @@ while [[ "$#" -gt 0 ]]; do
     esac
     shift
 done
+API_FILE_PATH="${RESTLER_DIR}/5g-Microservice-testing/apis/${FILENAME}"
 echo "Radamsa: $radamsa"
 echo "Reinstall RESTler: $reinstall"
 echo "Using API file: $FILENAME"
