@@ -11,7 +11,7 @@
   },
   "servers": [
     {
-      "url": "{apiRoot}/nsmf-pdusession/v1",
+      "url": "https://smf:8000",
       "variables": {
         "apiRoot": {
           "default": "https://example.com",
@@ -29,7 +29,7 @@
     }
   ],
   "paths": {
-    "/sm-contexts": {
+    "/nsmf-pdusession/v1/sm-contexts": {
       "post": {
         "callbacks": {
           "smContextStatusNotification": {
@@ -486,7 +486,7 @@
         ]
       }
     },
-    "/sm-contexts/{smContextRef}/retrieve": {
+    "/nsmf-pdusession/v1/sm-contexts/{smContextRef}/retrieve": {
       "post": {
         "operationId": "RetrieveSmContext",
         "parameters": [
@@ -624,7 +624,7 @@
         ]
       }
     },
-    "/sm-contexts/{smContextRef}/modify": {
+    "/nsmf-pdusession/v1/sm-contexts/{smContextRef}/modify": {
       "post": {
         "operationId": "UpdateSmContext",
         "parameters": [
@@ -1024,7 +1024,7 @@
         ]
       }
     },
-    "/sm-contexts/{smContextRef}/release": {
+    "/nsmf-pdusession/v1/sm-contexts/{smContextRef}/release": {
       "post": {
         "operationId": "ReleaseSmContext",
         "parameters": [
@@ -1179,7 +1179,7 @@
         ]
       }
     },
-    "/pdu-sessions": {
+    "/nsmf-pdusession/v1/pdu-sessions": {
       "post": {
         "callbacks": {
           "statusNotification": {
@@ -2149,7 +2149,7 @@
         ]
       }
     },
-    "/pdu-sessions/{pduSessionRef}/modify": {
+    "/nsmf-pdusession/v1/pdu-sessions/{pduSessionRef}/modify": {
       "post": {
         "operationId": "UpdatePduSession",
         "parameters": [
@@ -2471,7 +2471,7 @@
         ]
       }
     },
-    "/pdu-sessions/{pduSessionRef}/release": {
+    "/nsmf-pdusession/v1/pdu-sessions/{pduSessionRef}/release": {
       "post": {
         "operationId": "ReleasePduSession",
         "parameters": [
