@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  forest:
+    image: ubuntu:22.04
+    command: >
+      sh -c "
+      apt-get update &&
+	    apt-get install -y wget git curl &&
+	    git clone https://github.com/Artisan-Lab/foREST.git &&
+	    git clone https://github.com/ashwin63/5g-Microservice-testing.git &&
+	    apt install -y python3 python3-pip python3.10-venv &&
+      python3 -m venv /venv &&
+      . /venv/bin/activate &&
+	    pip3 install allpairspy &&
+	    cd foREST &&
+      pip3 install -r requirements.txt &&
+      tail -f /dev/null
+      "
+    networks:
+      - free5gc-compose_privnet
+    restart: always
+
+networks:
+  free5gc-compose_privnet:
+    external: true

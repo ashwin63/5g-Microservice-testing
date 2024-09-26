@@ -11,7 +11,7 @@
   },
   "servers": [
     {
-      "url": "/"
+      "url": "https://nrf:8000"
     }
   ],
   "paths": {

@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  evomaster:
+    image: ubuntu:22.04
+    command: >
+      sh -c "
+      apt-get update &&
+      apt-get install -y wget openjdk-11-jdk &&
+      java --version &&
+      wget https://github.com/WebFuzzing/EvoMaster/releases/download/v3.1.0/evomaster.jar &&
+      java -jar evomaster.jar --help &&
+      tail -f /dev/null
+      "
+    networks:
+      - free5gc-compose_privnet
+    restart: always
+
+networks:
+  free5gc-compose_privnet:
+    external: true
