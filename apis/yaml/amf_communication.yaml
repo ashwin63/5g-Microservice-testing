@@ -1,4 +1,4 @@
-  openapi: 3.0.0
+openapi: 3.0.0
 info:
   description: AMF Communication Service
   title: Namf_Communication
