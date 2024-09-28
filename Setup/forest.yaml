@@ -3,18 +3,20 @@ version: '3.8'
 services:
   forest:
     image: ubuntu:22.04
-    entrypoint: /bin/sh -c "tail -f /dev/null"
-    command: |
-      apt-get update && \
-      apt-get install -y wget git curl && \
-      git clone https://github.com/sathiyajith/foREST.git && \
-      git clone https://github.com/ashwin63/5g-Microservice-testing.git && \
-      apt install -y python3 python3-pip python3.10-venv && \
-      python3 -m venv /venv && \
-      . /venv/bin/activate && \
-      pip3 install allpairspy && \
-      cd foREST && \
-      pip3 install -r requirements.txt
+    entrypoint: >
+      sh -c "
+      apt-get update &&
+	    apt-get install -y wget git curl &&
+	    git clone https://github.com/sathiyajith/foREST.git &&
+	    git clone https://github.com/ashwin63/5g-Microservice-testing.git &&
+	    apt install -y python3 python3-pip python3.10-venv &&
+      python3 -m venv /venv &&
+      . /venv/bin/activate &&
+	    pip3 install allpairspy &&
+	    cd foREST &&
+      pip3 install -r requirements.txt &&
+      while true; do echo 'Container is running'; sleep 60; done
+      "
     networks:
       - free5gc-compose_privnet
     restart: always
