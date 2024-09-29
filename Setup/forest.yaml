@@ -3,6 +3,8 @@ version: '3.8'
 services:
   forest:
     image: ubuntu:22.04
+    volumes:
+      - ./entrypoint.sh:/entrypoint.sh
     entrypoint: /entrypoint.sh
     networks:
       - free5gc-compose_privnet
