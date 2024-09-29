@@ -3,12 +3,18 @@ version: '3.8'
 services:
   forest:
     image: ubuntu:22.04
-    volumes:
-      - ./entrypoint.sh:/entrypoint.sh
     entrypoint: /entrypoint.sh
     networks:
       - free5gc-compose_privnet
     restart: always
+    deploy:
+      resources:
+        limits:
+          memory: 2g         # Limit memory to 2 GB
+          cpus: '1.0'        # Limit to 1 CPU core
+        reservations:
+          memory: 1g         # Reserve at least 1 GB of memory
+          cpus: '0.5'        # Reserve at least 0.5 CPU core
 
 networks:
   free5gc-compose_privnet:
