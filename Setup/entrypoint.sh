@@ -23,5 +23,5 @@ pip install -r requirements.txt
 # Keep the container running
 while true; do
   echo 'Container is running'
-  sleep 60
+  sleep 600
 done

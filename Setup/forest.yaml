@@ -5,16 +5,11 @@ services:
     image: ubuntu:22.04
     volumes:
       - ./entrypoint.sh:/entrypoint.sh
+      - /home/grads/sxk6394/results:/results
     entrypoint: /entrypoint.sh
     networks:
       - free5gc-compose_privnet
     restart: always
-    deploy:
-      resources:
-        limits:
-          memory: 2g         # Limit memory to 2 gb
-        reservations:
-          memory: 1g         # Reserve at least 1 GB of memory
 
 networks:
   free5gc-compose_privnet:
