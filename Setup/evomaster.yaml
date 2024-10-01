@@ -8,8 +8,9 @@ services:
       apt-get update &&
       apt-get install -y wget openjdk-11-jdk &&
       java --version &&
-      wget https://github.com/WebFuzzing/EvoMaster/releases/download/v3.1.0/evomaster.jar &&
-      java -jar evomaster.jar --help &&
+      wget https://github.com/WebFuzzing/EvoMaster/releases/download/v3.2.0/evomaster_3.2.0_amd64.deb &&
+      dpkg -i evomaster_3.2.0_amd64.deb &&
+      export PATH="$PATH:/opt/evomaster/bin" &&
       tail -f /dev/null
       "
     volumes:
