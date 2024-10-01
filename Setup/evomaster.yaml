@@ -12,6 +12,8 @@ services:
       java -jar evomaster.jar --help &&
       tail -f /dev/null
       "
+    volumes:
+      - /home/grads/sxk6394/results/evomaster:/results
     networks:
       - free5gc-compose_privnet
     restart: always
