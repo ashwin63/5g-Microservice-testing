@@ -6,11 +6,12 @@ services:
     command: >
       sh -c "
       apt-get update &&
-      apt-get install -y wget openjdk-11-jdk &&
+      apt-get install -y wget openjdk-11-jdk git &&
       java --version &&
       wget https://github.com/WebFuzzing/EvoMaster/releases/download/v3.2.0/evomaster_3.2.0_amd64.deb &&
       dpkg -i evomaster_3.2.0_amd64.deb &&
       export PATH="$PATH:/opt/evomaster/bin" &&
+      git clone https://github.com/ashwin63/5g-Microservice-testing.git &&
       tail -f /dev/null
       "
     volumes:
