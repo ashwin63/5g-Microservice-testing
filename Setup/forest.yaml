@@ -10,7 +10,7 @@ services:
       git clone https://github.com/sathiyajith/foREST.git &&
       git clone https://github.com/ashwin63/5g-Microservice-testing.git &&
       python3 -m venv /venv &&
-      source /venv/bin/activate &&
+      . /venv/bin/activate &&
       pip install allpairspy &&
       cd foREST &&
       pip install -r requirements.txt &&
