@@ -1,0 +1,87 @@
+; ----------------------------------------
+;   RFC 5234
+; ----------------------------------------
+
+HTAB   = %x09 ; horizontal tab
+
+SP     = %x20
+
+DIGIT  = %x30-39 ; 0-9
+
+ALPHA  = %x41-5A / %x61-7A ; A-Z / a-z
+
+HEXDIG = DIGIT / "A" / "B" / "C" / "D" / "E" / "F"
+
+; ----------------------------------------
+;   RFC 9110
+; ----------------------------------------
+
+OWS            = *( SP / HTAB )
+
+RWS            = 1*( SP / HTAB )
+
+tchar          = "!" / "#" / "$" / "%" / "&" / "'" / "*" / "+" / "-"
+               / "." / "^" / "_" / "`" / "|" / "~" / DIGIT / ALPHA
+
+token          = 1*tchar
+
+; ----------------------------------------
+;   3GPP TS 29.573
+;
+;   Version: 18.6.0 (March 2024)
+;
+;   (c) 2023, 3GPP Organizational Partners (ARIB, ATIS, CCSA, ETSI, TSDSI, TTA, TTC).
+; ----------------------------------------
+
+;
+; Header: 3gpp-Connect-Req-Info
+;
+Connect-Req-Info-Header = "3gpp-Connect-Req-Info:" OWS "connect-purpose=" OWS connect-purpose-value ";" OWS orig-network-id ";" OWS sender-fqdn [";" OWS intended-n32-purposes] *( ";" OWS req-param )
+
+connect-purpose-value =  "n32c" / token
+
+orig-network-id = "originating-network-id=" OWS 3DIGIT "-" 2*3DIGIT [ "-" 11HEXDIG ]
+
+sender-fqdn = "sender-fqdn=" OWS 4*( ALPHA / DIGIT / "-" / "." )
+
+intended-n32-purposes = intended-n32-purpose *(";" OWS intended-n32-purpose)
+
+intended-n32-purpose="intended-n32-purpose=" OWS n32-purpose-value
+
+n32-purpose-value = "ROAMING"
+           / "INTER_PLMN_MOBILITY"
+           / "SMS_INTERCONNECT"
+           / "ROAMING_TEST"
+           / "INTER_PLMN_MOBILITY_TEST"
+           / "SMS_INTERCONNECT_TEST"
+           / "SNPN_INTERCONNECT"
+           / "SNPN_INTERCONNECT_TEST"
+           / "DISASTER_ROAMING"
+           / "DISASTER_ROAMING_TEST"
+           / token
+
+req-param = req-param-name "=" OWS req-param-value
+
+req-param-name = token
+
+req-param-value = token
+
+;
+; Header: 3gpp-Connect-Resp-Info
+;
+
+Connect-Resp-Info-Header = "3gpp-Connect-Resp-Info:" OWS resp-param *( ";" OWS resp-param ) OWS
+
+resp-param = allowed-n32-purposes / p-sepp-fqdn / other-resp-param
+
+allowed-n32-purposes = allowed-n32-purpose *(OWS ";" OWS allowed-n32-purpose)
+
+allowed-n32-purpose = "allowed-n32-purpose=" n32-purpose-value
+
+p-sepp-fqdn = "p-sepp-fqdn=" OWS 4*( ALPHA / DIGIT / "-" / "." )
+
+other-resp-param = other-resp-param-name "=" OWS other-resp-param-value
+
+other-resp-param-name = token
+
+other-resp-param-value = token
