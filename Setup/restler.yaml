@@ -3,12 +3,17 @@ version: '3.8'
 services:
   restler:
     image: restler:latest
-    entrypoint: ["sh", "-c", "while true; do echo 'Container is running'; sleep 60; done"]
+    command: >
+      sh -c "
+      apk add git &&
+      git clone https://github.com/ashwin63/5g-Microservice-testing.git &&
+      tail -f /dev/null
+      "
     networks:
       - privnet
     restart: always
     volumes:
-      - ./restler_files:/RESTler/restler/restler_files
+      - /home/grads/sxk6394/results/restler:/results
 networks:
   privnet:
     driver: bridge
