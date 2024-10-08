@@ -19,7 +19,7 @@
   },
   "servers": [
     {
-      "url": "{apiRoot}/namf-loc/v1",
+      "url": "http://amf:8000",
       "variables": {
         "apiRoot": {
           "default": "https://example.com",
@@ -29,7 +29,7 @@
     }
   ],
   "paths": {
-    "/{ueContextId}/provide-pos-info": {
+    "/namf-loc/v1/{ueContextId}/provide-pos-info": {
       "post": {
         "summary": "Namf_Location ProvidePositioningInfo service Operation",
         "tags": [
@@ -192,7 +192,7 @@
         }
       }
     },
-    "/{ueContextId}/provide-loc-info": {
+    "/namf-loc/v1/{ueContextId}/provide-loc-info": {
       "post": {
         "summary": "Namf_Location ProvideLocationInfo service Operation",
         "tags": [
@@ -277,7 +277,7 @@
         }
       }
     },
-    "/{ueContextId}/cancel-pos-info": {
+    "/namf-loc/v1/{ueContextId}/cancel-pos-info": {
       "post": {
         "summary": "Namf_Location CancelLocation service operation",
         "tags": [
