@@ -6,7 +6,6 @@ services:
     command: >
       sh -c "
       apk add git &&
-      git clone https://github.com/ashwin63/5g-Microservice-testing.git &&
       tail -f /dev/null
       "
     networks:

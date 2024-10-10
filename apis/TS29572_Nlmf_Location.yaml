@@ -533,9 +533,7 @@ components:
             nlmf-loc:configure-up:invoke: Access to invoke UP Config
 
   schemas:
-#
-# COMPLEX TYPES
-#
+
     InputData:
       description: Information within Determine Location Request.
       type: object
