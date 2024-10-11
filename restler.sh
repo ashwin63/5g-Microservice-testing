@@ -69,7 +69,7 @@ if [ $? -eq 0 ]; then
          $RESTLER_BIN_DIR/restler/Restler  fuzz --grammar_file  $RESTLER_DIR/Compile/grammar.py --dictionary_file  $RESTLER_DIR/Compile/dict.json --no_ssl --time_budget 1
     fi
     echo "Restler Fuzz Finished" >> $RESULTS_FILE
-    mv $RESTLER_DIR/Fuzz/* $RESULTS_DIR/
+    cp -rf $RESTLER_DIR/Fuzz/RestlerResults/* $RESULTS_DIR/
 else
     # If the test command failed, enter an infinite loop
     echo "Restler Test failed" >> $RESULTS_FILE
