@@ -11,7 +11,7 @@
   },
   "servers": [
     {
-      "url": "{apiRoot}/namf-mbs-comm/v1",
+      "url": "http://amf:8000",
       "variables": {
         "apiRoot": {
           "default": "https://example.com",
@@ -29,7 +29,7 @@
     }
   ],
   "paths": {
-    "/n2-messages/transfer": {
+    "/namf-mbs-comm/v1/n2-messages/transfer": {
       "post": {
         "summary": "Namf_MBSCommunication N2 Message Transfer service Operation",
         "tags": [
