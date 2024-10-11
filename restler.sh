@@ -63,10 +63,10 @@ if [ $? -eq 0 ]; then
     if $radamsa 
     then
         echo "using radamsa"
-         $RESTLER_BIN_DIR/restler/Restler  fuzz --grammar_file  $RESTLER_DIR/Compile/grammar.py --dictionary_file   $RESTLER_DIR/Compile/dict.json --settings $SETTINGS_FILE_PATH --no_ssl  --time_budget 5
+         $RESTLER_BIN_DIR/restler/Restler  fuzz --grammar_file  $RESTLER_DIR/Compile/grammar.py --dictionary_file   $RESTLER_DIR/Compile/dict.json --settings $SETTINGS_FILE_PATH --no_ssl  --time_budget 1
     else
         echo " Starting fuzzing with default dictionary"
-         $RESTLER_BIN_DIR/restler/Restler  fuzz --grammar_file  $RESTLER_DIR/Compile/grammar.py --dictionary_file  $RESTLER_DIR/Compile/dict.json --no_ssl --time_budget 5
+         $RESTLER_BIN_DIR/restler/Restler  fuzz --grammar_file  $RESTLER_DIR/Compile/grammar.py --dictionary_file  $RESTLER_DIR/Compile/dict.json --no_ssl --time_budget 1
     fi
     echo "Restler Fuzz Finished" >> $RESULTS_FILE
     mv $RESTLER_DIR/Fuzz/* $RESULTS_DIR/
