@@ -1,19 +1,20 @@
 version: "3.8"
 
 services:
-  free5gc-upf:
-    container_name: upf
-    image: free5gc/upf:v3.4.3
-    command: bash -c "./upf-iptables.sh && ./upf -c ./config/upfcfg.yaml"
-    volumes:
-      - ./config/upfcfg.yaml:/free5gc/config/upfcfg.yaml
-      - ./config/upf-iptables.sh:/free5gc/upf-iptables.sh
-    cap_add:
-      - NET_ADMIN
+
+  restler:
+    image: restler:latest
+    command: >
+      sh -c "
+      apk add git &&
+      git clone https://github.com/ashwin63/5g-Microservice-testing.git &&
+      tail -f /dev/null
+      "
     networks:
-      privnet:
-        aliases:
-          - upf.free5gc.org
+      - privnet
+    restart: always
+    volumes:
+      - /home/grads/sxk6394/results/restler:/results
 
   db:
     container_name: mongodb
@@ -46,6 +47,24 @@ services:
           - nrf.free5gc.org
     depends_on:
       - db
+
+  free5gc-ausf:
+    container_name: ausf
+    image: free5gc/ausf:v3.4.3
+    command: ./ausf -c ./config/ausfcfg.yaml
+    expose:
+      - "8000"
+    volumes:
+      - ./config/ausfcfg.yaml:/free5gc/config/ausfcfg.yaml
+      - ./cert:/free5gc/cert
+    environment:
+      GIN_MODE: release
+    networks:
+      privnet:
+        aliases:
+          - ausf.free5gc.org
+    depends_on:
+      - free5gc-nrf
 
   free5gc-amf:
     container_name: amf
