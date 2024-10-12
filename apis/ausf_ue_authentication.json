@@ -11,7 +11,7 @@
   },
   "servers": [
     {
-      "url": "{apiRoot}/nausf-auth/v1",
+      "url": "http://ausf:8000",
       "variables": {
         "apiRoot": {
           "default": "https://example.com",
@@ -29,7 +29,7 @@
     }
   ],
   "paths": {
-    "/ue-authentications": {
+    "/nausf-auth/v1/ue-authentications": {
       "post": {
         "security": [
           {},
@@ -155,7 +155,7 @@
         }
       }
     },
-    "/ue-authentications/deregister": {
+    "/nausf-auth/v1/ue-authentications/deregister": {
       "post": {
         "security": [
           {},
@@ -227,7 +227,7 @@
         }
       }
     },
-    "/ue-authentications/{authCtxId}/5g-aka-confirmation": {
+    "/nausf-auth/v1/ue-authentications/{authCtxId}/5g-aka-confirmation": {
       "put": {
         "security": [
           {},
@@ -398,7 +398,7 @@
         }
       }
     },
-    "/ue-authentications/{authCtxId}/eap-session": {
+    "/nausf-auth/v1/ue-authentications/{authCtxId}/eap-session": {
       "post": {
         "operationId": "EapAuthMethod",
         "security": [
@@ -592,7 +592,7 @@
         }
       }
     },
-    "/rg-authentications": {
+    "/nausf-auth/v1/rg-authentications": {
       "post": {
         "security": [
           {},
@@ -701,7 +701,7 @@
         }
       }
     },
-    "/prose-authentications": {
+    "/nausf-auth/v1/prose-authentications": {
       "post": {
         "security": [
           {},
@@ -799,7 +799,7 @@
         }
       }
     },
-    "/prose-authentications/{authCtxId}/prose-auth": {
+    "/nausf-auth/v1/prose-authentications/{authCtxId}/prose-auth": {
       "post": {
         "operationId": "proseAuth",
         "security": [
