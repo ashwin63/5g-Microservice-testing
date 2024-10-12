@@ -48,40 +48,21 @@ services:
     depends_on:
       - db
 
-  free5gc-ausf:
-    container_name: ausf
-    image: free5gc/ausf:v3.4.3
-    command: ./ausf -c ./config/ausfcfg.yaml
+  free5gc-nssf:
+    container_name: nssf
+    image: free5gc/nssf:v3.4.3
+    command: ./nssf -c ./config/nssfcfg.yaml
     expose:
       - "8000"
     volumes:
-      - ./config/ausfcfg.yaml:/free5gc/config/ausfcfg.yaml
+      - ./config/nssfcfg.yaml:/free5gc/config/nssfcfg.yaml
       - ./cert:/free5gc/cert
     environment:
       GIN_MODE: release
     networks:
       privnet:
         aliases:
-          - ausf.free5gc.org
-    depends_on:
-      - free5gc-nrf
-
-  free5gc-amf:
-    container_name: amf
-    image: free5gc/amf:v3.4.3
-    command: ./amf -c ./config/amfcfg.yaml
-    expose:
-      - "8000"
-    volumes:
-      - ./config/amfcfg.yaml:/free5gc/config/amfcfg.yaml
-      - ./cert:/free5gc/cert
-    environment:
-      GIN_MODE: release
-    networks:
-      privnet:
-        ipv4_address: 10.100.200.16
-        aliases:
-          - amf.free5gc.org
+          - nssf.free5gc.org
     depends_on:
       - free5gc-nrf
 
