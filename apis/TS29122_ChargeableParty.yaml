@@ -1,14 +1,14 @@
 openapi: 3.0.0
 info:
   title: 3gpp-chargeable-party
-  version: 1.3.0-alpha.1
-  description: |
-    API for Chargeable Party management.  
-    © 2023, 3GPP Organizational Partners (ARIB, ATIS, CCSA, ETSI, TSDSI, TTA, TTC).  
+  version: 1.0.5
+  description: | 
+    API for Chargeable Party management.
+    © 2022, 3GPP Organizational Partners (ARIB, ATIS, CCSA, ETSI, TSDSI, TTA, TTC).
     All rights reserved.
 externalDocs:
-  description: 3GPP TS 29.122 V18.1.0 T8 reference point for Northbound APIs
-  url: 'https://www.3gpp.org/ftp/Specs/archive/29_series/29.122/'
+  description: 3GPP TS 29.122 V15.15.0 T8 reference point for Northbound APIs
+  url: 'http://www.3gpp.org/ftp/Specs/archive/29_series/29.122/'
 security:
   - {}
   - oAuth2ClientCredentials: []
@@ -17,12 +17,11 @@ servers:
     variables:
       apiRoot:
         default: https://example.com
-        description: apiRoot as defined in clause 5.2.4 of 3GPP TS 29.122.
+        description: apiRoot as defined in subclause 5.2.4 of 3GPP TS 29.122.
 paths:
   /{scsAsId}/transactions:
     get:
-      summary: Read all or queried chargeable party transaction resources for a given SCS/AS.
-      operationId: FetchAllChargeablePartyTransactions
+      summary: Read all chargeable party transaction resources for a given SCS/AS
       tags:
         - Chargeable Party Transaction Operation
       parameters:
@@ -32,32 +31,6 @@ paths:
           required: true
           schema:
             type: string
-        - name: ip-addrs
-          in: query
-          description: The IP address(es) of the requested UE(s).
-          required: false
-          content:
-            application/json:
-              schema:
-                type: array
-                items:
-                  $ref: 'TS29571_CommonData.yaml#/components/schemas/IpAddr'
-                minItems: 1
-        - name: ip-domain
-          in: query
-          description: The IPv4 address domain identifier. The attribute may only be provided if IPv4 address is included in the ip-addrs query parameter.
-          required: false
-          schema:
-            type: string
-        - name: mac-addrs
-          in: query
-          description: The MAC address(es) of the requested UE(s).
-          required: false
-          schema:
-            type: array
-            items:
-              $ref: 'TS29571_CommonData.yaml#/components/schemas/MacAddr48'
-            minItems: 1
       responses:
         '200':
           description: OK (successful query of Chargeable Party resource)
@@ -69,10 +42,6 @@ paths:
                   $ref: '#/components/schemas/ChargeableParty'
                 minItems: 0
                 description: individual BDT policy subscription.
-        '307':
-          $ref: 'TS29122_CommonData.yaml#/components/responses/307'
-        '308':
-          $ref: 'TS29122_CommonData.yaml#/components/responses/308'
         '400':
           $ref: 'TS29122_CommonData.yaml#/components/responses/400'
         '401':
@@ -93,8 +62,7 @@ paths:
           $ref: 'TS29122_CommonData.yaml#/components/responses/default'
 
     post:
-      summary:  Create a new chargeable party transaction resource.
-      operationId: CreateChargeablePartyTransaction
+      summary:  Create a new chargeable party transaction resource
       tags:
         - Chargeable Party Transaction Operation
       parameters:
@@ -124,10 +92,6 @@ paths:
               responses:
                 '204':
                   description: No Content (The successful acknowledgement of the notification)
-                '307':
-                  $ref: 'TS29122_CommonData.yaml#/components/responses/307'
-                '308':
-                  $ref: 'TS29122_CommonData.yaml#/components/responses/308'
                 '400':
                   $ref: 'TS29122_CommonData.yaml#/components/responses/400'
                 '401':
@@ -188,8 +152,7 @@ paths:
 
   /{scsAsId}/transactions/{transactionId}:
     get:
-      summary: Read a chargeable party resource for a given SCS/AS and a transaction Id.
-      operationId: FetchIndChargeablePartyTransaction
+      summary: read a chargeable party resource for a given SCS/AS and a transaction Id
       tags:
         - Individual chargeable party resource Operation
       parameters:
@@ -212,10 +175,6 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ChargeableParty'
-        '307':
-          $ref: 'TS29122_CommonData.yaml#/components/responses/307'
-        '308':
-          $ref: 'TS29122_CommonData.yaml#/components/responses/308'
         '400':
           $ref: 'TS29122_CommonData.yaml#/components/responses/400'
         '401':
@@ -237,7 +196,6 @@ paths:
 
     patch:
       summary:  Updates a existing chargeable party resource for a given SCS/AS and transaction Id.
-      operationId: UpdateChargeablePartyTransaction
       tags:
         - Individual chargeable party resource Operation
       parameters:
@@ -267,12 +225,6 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ChargeableParty'
-        '204':
-          description: No Content
-        '307':
-          $ref: 'TS29122_CommonData.yaml#/components/responses/307'
-        '308':
-          $ref: 'TS29122_CommonData.yaml#/components/responses/308'
         '400':
           $ref: 'TS29122_CommonData.yaml#/components/responses/400'
         '401':
@@ -297,8 +249,7 @@ paths:
           $ref: 'TS29122_CommonData.yaml#/components/responses/default'
 
     delete:
-      summary:  Deletes a chargeable party resource for a given SCS/AS and a transcation Id.
-      operationId: DeleteChargeablePartyTransaction
+      summary:  deletes a chargeable party resource for a given SCS/AS and a transcation Id.
       tags:
         - Individual chargeable party resource Operation
       parameters:
@@ -323,10 +274,6 @@ paths:
             application/json:
               schema:
                 $ref: 'TS29122_CommonData.yaml#/components/schemas/NotificationData'
-        '307':
-          $ref: 'TS29122_CommonData.yaml#/components/responses/307'
-        '308':
-          $ref: 'TS29122_CommonData.yaml#/components/responses/308'
         '400':
           $ref: 'TS29122_CommonData.yaml#/components/responses/400'
         '401':
@@ -353,27 +300,19 @@ components:
           scopes: {}
   schemas: 
     ChargeableParty:
-      description: Represents the configuration of a chargeable party.
       type: object
       properties:
         self:
           $ref: 'TS29122_CommonData.yaml#/components/schemas/Link'
         supportedFeatures:
           $ref: 'TS29571_CommonData.yaml#/components/schemas/SupportedFeatures'
-        dnn:
-          $ref: 'TS29571_CommonData.yaml#/components/schemas/Dnn'
-        snssai:
-          $ref: 'TS29571_CommonData.yaml#/components/schemas/Snssai'
         notificationDestination:
           $ref: 'TS29122_CommonData.yaml#/components/schemas/Link'
         requestTestNotification:
           type: boolean
-          description: Set to true by the SCS/AS to request the SCEF to send a test notification as defined in clause 5.2.5.3. Set to false or omitted otherwise.
+          description: Set to true by the SCS/AS to request the SCEF to send a test notification as defined in subclause 5.2.5.3. Set to false or omitted otherwise.
         websockNotifConfig:
           $ref: 'TS29122_CommonData.yaml#/components/schemas/WebsockNotifConfig'
-        exterAppId:
-          type: string
-          description: Identifies the external Application Identifier.
         ipv4Addr:
           $ref: 'TS29122_CommonData.yaml#/components/schemas/Ipv4Addr'
         ipDomain:
@@ -398,26 +337,16 @@ components:
           $ref: 'TS29122_CommonData.yaml#/components/schemas/SponsorInformation'
         sponsoringEnabled:
           type: boolean
-          description: >
-            Indicates whether the sponsoring data connectivity is enabled (true) or not (false).
+          description: Indicates whether the sponsoring data connectivity is enabled (true) or not (false).
         referenceId:
           $ref: 'TS29122_CommonData.yaml#/components/schemas/BdtReferenceId'
-        servAuthInfo:
-          $ref: 'TS29514_Npcf_PolicyAuthorization.yaml#/components/schemas/ServAuthInfo'
         usageThreshold:
           $ref: 'TS29122_CommonData.yaml#/components/schemas/UsageThreshold'
-        events:
-          type: array
-          items:
-            $ref: 'TS29122_CommonData.yaml#/components/schemas/Event'
-          minItems: 1
-          description: Represents the list of event(s) to which the SCS/AS requests to subscribe to.
       required:
         - notificationDestination
         - sponsorInformation
         - sponsoringEnabled
     ChargeablePartyPatch:
-      description: Represents a modification request of a chargeable party resource.
       type: object
       properties:
         flowInfo:
@@ -425,10 +354,7 @@ components:
           items:
             $ref: 'TS29122_CommonData.yaml#/components/schemas/FlowInfo'
           minItems: 1
-          description: Describes the IP flows.
-        exterAppId:
-          type: string
-          description: Identifies the external Application Identifier.
+          description: Describes the application flows.
         ethFlowInfo:
           type: array
           items:
@@ -437,17 +363,8 @@ components:
           description: Identifies Ethernet packet flows.
         sponsoringEnabled:
           type: boolean
-          description: >
-            Indicates whether the sponsoring data connectivity is enabled (true) or not (false).
+          description: Indicates whether the sponsoring data connectivity is enabled (true) or not (false).
         referenceId:
           $ref: 'TS29122_CommonData.yaml#/components/schemas/BdtReferenceId'
         usageThreshold:
           $ref: 'TS29122_CommonData.yaml#/components/schemas/UsageThresholdRm'
-        notificationDestination:
-          $ref: 'TS29122_CommonData.yaml#/components/schemas/Link'
-        events:
-          description: Represents the list of event(s) to which the SCS/AS requests to subscribe to.
-          type: array
-          items:
-            $ref: 'TS29122_CommonData.yaml#/components/schemas/Event'
-          minItems: 1
