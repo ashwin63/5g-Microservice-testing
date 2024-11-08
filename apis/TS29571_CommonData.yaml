@@ -1765,6 +1765,12 @@ components:
         application/problem+json:
           schema:
             $ref: '#/components/schemas/ProblemDetails'
+    '502':
+      description: Sathya added
+      content:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/ProblemDetails'
     '503':
       description: Service Unavailable
       content:
