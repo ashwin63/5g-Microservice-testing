@@ -3,7 +3,7 @@
 # first argument filename 
 # -r => uses radamsa
 # -i => reinstalls restler
-FILENAME="udm_ueid.json"
+FILENAME="udr_groupid.json"
 RESTLER_DIR="/RESTler/modified_restler"
 RESTLER_BIN_DIR="${RESTLER_DIR}/restler_bin"
 API_FILE_PATH="${RESTLER_DIR}/5g-Microservice-testing/apis/${FILENAME}"
